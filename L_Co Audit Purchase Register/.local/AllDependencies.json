@@ -8408,9 +8408,9 @@
     "restore": {
       "projectUniqueName": "L_Co Audit Purchase Register",
       "projectName": "L_Co Audit Purchase Register",
-      "projectPath": "C:\\Users\\Lenovo\\Documents\\UiPath\\L_Co Audit Purchase Register\\.local",
+      "projectPath": "C:\\Users\\Lenovo\\Documents\\UiPath\\Rpa\\brad-uipath\\L_Co Audit Purchase Register\\.local",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo\\Documents\\UiPath\\L_Co Audit Purchase Register\\.local"
+      "outputPath": "C:\\Users\\Lenovo\\Documents\\UiPath\\Rpa\\brad-uipath\\L_Co Audit Purchase Register\\.local"
     },
     "frameworks": {
       "net461": {
