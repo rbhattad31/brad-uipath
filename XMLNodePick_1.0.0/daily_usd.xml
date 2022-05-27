@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<channel>
+	<title language="English">XML Daily Foreign Exchange Rates for U.S. Dollar (USD)</title>
+	<description>XML Daily foreign exchange rates for U.S. Dollar (USD). Published at Wed, 30 Jan 2019 00:00:01 GMT.</description>
+	<language>en</language>
+	<baseCurrency>USD</baseCurrency>
+	<pubDate>Wed, 30 Jan 2019 00:00:01 GMT</pubDate>
+	<lastBuildDate>Wed, 30 Jan 2019 00:00:01 GMT</lastBuildDate>
+	<item>
+		<title>1 USD = 0.87482055 EUR</title>
+		<description>1 U.S. Dollar = 0.87482055 Euro</description>
+		<pubDate>Wed, 30 Jan 2019 00:00:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>EUR</targetCurrency>
+		<targetName>Euro</targetName>
+		<exchangeRate>0.87482055</exchangeRate>
+		<inverseRate>1.14309157</inverseRate>
+		<inverseDescription>1 Euro = 1.14309157 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 0.75996359 GBP</title>
+		<description>1 U.S. Dollar = 0.75996359 U.K. Pound Sterling</description>
+		<pubDate>Wed, 30 Jan 2019 00:00:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>GBP</targetCurrency>
+		<targetName>U.K. Pound Sterling</targetName>
+		<exchangeRate>0.75996359</exchangeRate>
+		<inverseRate>1.31585252</inverseRate>
+		<inverseDescription>1 U.K. Pound Sterling = 1.31585252 U.S. Dollar</inverseDescription>
+	</item>
+</channel>
