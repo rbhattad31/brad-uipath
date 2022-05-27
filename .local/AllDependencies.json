@@ -8743,11 +8743,11 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "Excel_CSV_Datatable",
-      "projectName": "Excel_CSV_Datatable",
-      "projectPath": "C:\\Users\\naviii\\Documents\\GitHub\\brad-uipath\\Excel_CSV_Datatable\\.local",
+      "projectUniqueName": "XMLNodePick_1.0.0",
+      "projectName": "XMLNodePick_1.0.0",
+      "projectPath": "C:\\Users\\naviii\\Documents\\GitHub\\brad-uipath\\.local",
       "packagesPath": "C:\\Users\\naviii\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\naviii\\Documents\\GitHub\\brad-uipath\\Excel_CSV_Datatable\\.local"
+      "outputPath": "C:\\Users\\naviii\\Documents\\GitHub\\brad-uipath\\.local"
     },
     "frameworks": {
       "net461": {
