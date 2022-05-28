@@ -2,8 +2,8 @@
 <inputs>
 	<botname> Excel_operations_bot </botname>
 	<email>kalyanshiva7@gmail.com</email>
-	<LogPath>C:\Users\naviii\Documents\UiPath\Excel_CSV_Datatable\log.txt</LogPath>
-	<inputExcelPath>C:\Users\naviii\Documents\UiPath\Excel_CSV_Datatable\Student_Marks.xlsx</inputExcelPath>
-	<outputCSVPath>C:\Users\naviii\Documents\UiPath\Excel_CSV_Datatable\OutputCSV.csv</outputCSVPath>
+	<LogPath>log.txt</LogPath>
+	<inputExcelPath>Student_Marks.xlsx</inputExcelPath>
+	<outputCSVPath>OutputCSV.csv</outputCSVPath>
 </inputs>
 

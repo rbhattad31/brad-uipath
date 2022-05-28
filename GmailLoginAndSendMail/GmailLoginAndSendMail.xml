@@ -9,6 +9,6 @@
 	</receiver>
 	<subject> Test mail </subject>
 	
-	<logpath>C:\Users\naviii\Documents\UiPath\GmailLoginAndSendMail\log.txt</logpath>
+	<logpath>log.txt</logpath>
 
 </credentials>
