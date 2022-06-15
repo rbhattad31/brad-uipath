@@ -9485,9 +9485,9 @@
     "restore": {
       "projectUniqueName": "BE_LTD_Dispatcher",
       "projectName": "BE_LTD_Dispatcher",
-      "projectPath": "C:\\Users\\TEMP\\OneDrive - bradsol.com\\Documents\\UiPath\\BE_LTD_Dispatcher\\.local",
+      "projectPath": "C:\\Users\\TEMP\\OneDrive - bradsol.com\\Documents\\GitHub\\brad-uipath\\BE_LTD_Dispatcher\\.local",
       "packagesPath": "C:\\Users\\TEMP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TEMP\\OneDrive - bradsol.com\\Documents\\UiPath\\BE_LTD_Dispatcher\\.local"
+      "outputPath": "C:\\Users\\TEMP\\OneDrive - bradsol.com\\Documents\\GitHub\\brad-uipath\\BE_LTD_Dispatcher\\.local"
     },
     "frameworks": {
       "net461": {
