@@ -5,11 +5,6 @@ import openpyxl
 from openpyxl.styles import Font, PatternFill
 # from xlsxwriter import Workbook
 
-excel_path = "C:\\Users\\naviii\\Documents\\UiPath\\Python_LNCO\\purchase_registers_raw.xlsx"
-previous_quarter_file = "C:\\Users\\naviii\\Documents\\UiPath\\Python_LNCO\\Previous_Quarter_Final_File.xlsx"
-excel_file_as_pd = pd.read_excel(excel_path, sheet_name="Sheet1")
-
-
 # comparatives methods start here
 
 
@@ -548,8 +543,20 @@ def concentration_formatting(file, purchase_pd_rows, month_pd_rows, plant_pd_row
 # Concentration methods end here
 
 
-def main():
-    filename = "C:\\Users\\naviii\\Documents\\UiPath\\Python_LNCO\\Output.xlsx"
+def main(input_file_path, previous_file_path, output_file_path):
+    excel_path = input_file_path
+    previous_quarter_file = previous_file_path
+
+    # excel_path = excel_path.replace('\\', '\\\\')
+    # previous_quarter_file = previous_quarter_file.replace('\\','\\\\')
+
+
+
+    # excel_path = "C:\\Users\\naviii\\Documents\\UiPath\\Python_LNCO\\purchase_registers_raw.xlsx"
+    # previous_quarter_file = "C:\\Users\\naviii\\Documents\\UiPath\\Python_LNCO\\Previous_Quarter_Final_File.xlsx"
+    excel_file_as_pd = pd.read_excel(excel_path, sheet_name="Sheet1")
+    
+    output_file_path = output_file_path
 
     # comparatives code starts here
 
@@ -585,7 +592,7 @@ def main():
     # --------------------------------------
 
     # save all output dataframes in a single excel file
-    with pd.ExcelWriter(filename, engine='xlsxwriter', engine_kwargs={'options': {'strings_to_numbers': True}},
+    with pd.ExcelWriter(output_file_path, engine='xlsxwriter', engine_kwargs={'options': {'strings_to_numbers': True}},
                         mode='w') as writer:
         purchase_type_wise_output.to_excel(writer, sheet_name="Purchase Type Wise Comparatives", index=False)
         month_wise_output.to_excel(writer, sheet_name="Month Wise Comparatives", index=False)
@@ -614,13 +621,13 @@ def main():
 
     # comparatives formatting starts here
 
-    financial_quarter_title_update(file=filename, quarter=financial_quarter)
+    financial_quarter_title_update(file=output_file_path, quarter=financial_quarter)
 
-    number_formatting(file=filename)
+    number_formatting(file=output_file_path)
 
-    apply_font_name_size_column_width(file=filename)
+    apply_font_name_size_column_width(file=output_file_path)
 
-    bold_and_color_fill(file=filename)
+    bold_and_color_fill(file=output_file_path)
 
     # comparatives formatting ends here
 
@@ -628,10 +635,7 @@ def main():
 
     # concentration formatting starts here
 
-    concentration_formatting(filename, purchase_pd_rows, month_pd_rows, plant_pd_rows, dom_import_pd_rows,
+    concentration_formatting(output_file_path, purchase_pd_rows, month_pd_rows, plant_pd_rows, dom_import_pd_rows,
                              financial_quarter)
 
     # concentration formatting ends here
-
-
-main()
