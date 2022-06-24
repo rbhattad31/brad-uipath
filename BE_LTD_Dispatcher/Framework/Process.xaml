@@ -117,7 +117,7 @@
         <OutArgument x:TypeArguments="x:String">[strSubject]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:String">[Split(in_TransactionItem(0).ToString)(1)]</InArgument>
+        <InArgument x:TypeArguments="x:String">[Split(in_TransactionItem(0).ToString)(0)]</InArgument>
       </Assign.Value>
     </Assign>
     <ui:LogMessage DisplayName="Log Message After Splitting Subject" sap:VirtualizedContainerService.HintSize="1336.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;After Splitting Subject&quot;+strSubject]" />
@@ -689,7 +689,7 @@
               </Sequence>
               <ui:LogMessage DisplayName="Log Message Icici Execution Ended" sap:VirtualizedContainerService.HintSize="794.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_28" Level="Info" Message="[&quot;ICICI Case Execution Ended&quot;]" />
             </Sequence>
-            <Sequence x:Key="Axis" DisplayName="Axis" sap:VirtualizedContainerService.HintSize="836,3696" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence x:Key="AXIS" DisplayName="Axis" sap:VirtualizedContainerService.HintSize="836,3696" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
