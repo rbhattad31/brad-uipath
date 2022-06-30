@@ -8987,15 +8987,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Anusha\\.nuget\\packages\\": {}
+    "C:\\Users\\TEMP\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "Update_StatusOfEmployee",
       "projectName": "Update_StatusOfEmployee",
-      "projectPath": "C:\\Users\\Anusha\\Documents\\UiPath\\Update_StatusOfEmployee\\.local",
-      "packagesPath": "C:\\Users\\Anusha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Anusha\\Documents\\UiPath\\Update_StatusOfEmployee\\.local"
+      "projectPath": "C:\\Users\\TEMP\\OneDrive - bradsol.com\\Documents\\GitHub\\brad-uipath\\Update_StatusOfEmployee\\.local",
+      "packagesPath": "C:\\Users\\TEMP\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\TEMP\\OneDrive - bradsol.com\\Documents\\GitHub\\brad-uipath\\Update_StatusOfEmployee\\.local"
     },
     "frameworks": {
       "net461": {
@@ -9026,7 +9026,7 @@
             "version": "[22.4.4, 22.4.4]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Anusha\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\TEMP\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {
