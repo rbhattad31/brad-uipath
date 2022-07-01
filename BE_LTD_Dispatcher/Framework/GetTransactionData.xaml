@@ -137,12 +137,8 @@
             </sap:WorkflowViewStateService.ViewState>
             <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Path_Validation workflow" sap:VirtualizedContainerService.HintSize="376,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="OutLook\Path_Validation.xaml">
               <ui:InvokeWorkflowFile.Arguments>
-                <InArgument x:TypeArguments="x:String" x:Key="in_AttachmentsSavingPath">
-                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;AttachmentSavingPath&quot;).ToString" />
-                </InArgument>
-                <OutArgument x:TypeArguments="x:String" x:Key="out_CurrentDateFolder">
-                  <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strCurrentDateFilePath" />
-                </OutArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_AttachmentsSavingPath">[in_Config("AttachmentSavingPath").ToString]</InArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="out_CurrentDateFolder">[strCurrentDateFilePath]</OutArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
             <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Reading_UnreadEmails workflow" sap:VirtualizedContainerService.HintSize="376,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="OutLook\Reading_UnreadEmails.xaml">
@@ -153,22 +149,17 @@
                 <OutArgument x:TypeArguments="scg:List(snm:MailMessage)" x:Key="out_ListMailMessages">
                   <mva:VisualBasicReference x:TypeArguments="scg:List(snm:MailMessage)" ExpressionText="list_MailMessages" />
                 </OutArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_EmailFolder">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;EmailFolder&quot;).ToString" />
+                </InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
             <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke GettingBankNameFromEmailBody workflow" sap:VirtualizedContainerService.HintSize="376,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="OutLook\GettingBankNameFromEmailBody.xaml">
               <ui:InvokeWorkflowFile.Arguments>
-                <InArgument x:TypeArguments="x:Int32" x:Key="in_UnreadEmailsCount">
-                  <mva:VisualBasicValue x:TypeArguments="x:Int32" ExpressionText="int_EmailCount" />
-                </InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_BankNames">
-                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;BankNames&quot;).ToString" />
-                </InArgument>
-                <InArgument x:TypeArguments="scg:List(snm:MailMessage)" x:Key="in_ListMailMessages">
-                  <mva:VisualBasicValue x:TypeArguments="scg:List(snm:MailMessage)" ExpressionText="list_MailMessages" />
-                </InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_CurrentDateFolderPath">
-                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strCurrentDateFilePath" />
-                </InArgument>
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_UnreadEmailsCount">[int_EmailCount]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_BankNames">[in_Config("BankNames").ToString]</InArgument>
+                <InArgument x:TypeArguments="scg:List(snm:MailMessage)" x:Key="in_ListMailMessages">[list_MailMessages]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_CurrentDateFolderPath">[strCurrentDateFilePath]</InArgument>
               </ui:InvokeWorkflowFile.Arguments>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -179,12 +170,8 @@
             </ui:InvokeWorkflowFile>
             <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke ExtractingPaymnetReferanceNumber workflow" sap:VirtualizedContainerService.HintSize="376,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="OutLook\ExtractingPaymnetReferanceNumber.xaml">
               <ui:InvokeWorkflowFile.Arguments>
-                <InArgument x:TypeArguments="x:String" x:Key="in_CurrenntDateFolderPath">
-                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strCurrentDateFilePath" />
-                </InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_SummaryReportPath">
-                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;SummaryReportFilePath&quot;).ToString" />
-                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_CurrenntDateFolderPath">[strCurrentDateFilePath]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_SummaryReportPath">[in_Config("SummaryReportFilePath").ToString]</InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
             <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="376,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_3">
