@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1144.8,1219.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1132,1219.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Path_Validation_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -67,7 +67,6 @@
       <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Path_Validation" sap:VirtualizedContainerService.HintSize="836,1154.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -100,7 +99,7 @@
               <OutArgument x:TypeArguments="x:String">[in_AttachmentsSavingPath]</OutArgument>
             </Assign.To>
             <Assign.Value>
-              <InArgument x:TypeArguments="x:String">[in_AttachmentsSavingPath+System.DateTime.Now.ToString("MM-dd-yyyy")]</InArgument>
+              <InArgument x:TypeArguments="x:String">[in_AttachmentsSavingPath+"Attachments\"+System.DateTime.Now.ToString("MM-dd-yyyy")]</InArgument>
             </Assign.Value>
           </Assign>
           <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder For Attchments Saving Path" sap:VirtualizedContainerService.HintSize="333.6,80.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[in_AttachmentsSavingPath]" />
