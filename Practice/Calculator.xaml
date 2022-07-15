@@ -1,0 +1,101 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="firstprocess" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="645,754" sap2010:WorkflowViewState.IdRef="firstprocess_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="firstprocess" sap:VirtualizedContainerService.HintSize="476,689" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Application: Calculator" sap:VirtualizedContainerService.HintSize="434,597" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="f3f37b6a-04ac-48c5-82b0-ddc2d5bac753" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,308" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Display is 0'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="f3f37b6a-04ac-48c5-82b0-ddc2d5bac753" Text="7+4=" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="8, 103, 272, 72" ElementType="Text" FriendlyName="'Display is 0'" FullSelectorArgument="&lt;uia automationid='CalculatorResults' name='Display is 0' role='text' /&gt;" FuzzySelectorArgument="&lt;uia automationid='CalculatorResults' name='Display is 0' role='text' check:fulltext='Display is 0' /&gt;" Guid="66b1732d-eeb7-435c-b105-6529aaa0ccc6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARQAAABMCAYAAACs2khXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARPSURBVHhe7d27ThVRFIDh/Qq0Jla8AAXvwBMY3sCEwkKjhmDUeBc1onjJeEk0EXPiBUXwHJCLRCgsbGhOyRtQWEoIbF3GY3RnrcOsk20x4/8lu1Bm2j97rxmGsLr2OZ5d/hYBoKy9vb24u7sbd3Z24vb2djzV+hpfv52L4fjoGYICwEULysiRozHcvlsQFAAuWlAuXLoaw+MnzwgKABctKDcmJmOYarwiKABctKDcuf8whhOnzxMUAC5aUO4Vj2JYWV0jKABctKBM3nsQw9LKJ4ICwEULysTk/Rg+LK8SFAAu+lD2TgwLSx8JCgAXLSjjNyZ+BGVxhaAAcNGCcvnK9RhaC8sEBYCLFpRzF6/E0CQoAJy0oJy9dE2CskRQALhoQTlweCqGuflFggLAxQ5K6wNBAeBiBmX2/QJBAeBiBuXdHEEB4GMGZWZunqAAcDGD8ma2RVCAmtja2opFUcTh4eHY398fQwi/19DQUBwbG4ubm5u/ru6dHZR3TYIC1MD4+Hjs6+v7KyLWkrBIfHplBmV65j1BASpuZGREDUe3NTg42HNUzKDIl6oJClBdvcSks+QY1AszKK/eEBSgqmReooVC5ieNRiOur6//XHKddRyS67y6BGWWoAAVJMcVLRKy69COMhsbG+r1Eh8vMygvpmcIClBBMoRN4yDB6DYXkd1Keo8s7y7FDMpLdihAJaWPhWVJZPYjw9j0PnnM7EFQgBqR40saBVllntpYcxcP+8jzmiMPUDVaFGTnUYYVIzkOlWUG5fmLaYICVIwcUdIgyMtqZaX3yvLMUcygPJ1qEBSgYrT5iexaypInQen9ZeYvHWZQikdPCApQMWkMZHmOLFpQPINZMyg3b90lKECFyOA1jYEsT1DkeJTe73lr1gzKkaMnCQpQIda7JJ7fItbeYckSlHa7TVCACrGC4vHPgnLwGB9YAqqEoADIhqAAyIagAMjGCoq8AVsWQQHwU47HxhKP9H7Pm7YEBaiRNAayms3mr5/uTwuK7FrKIihAjWifIPAEQfvQkmeHQ1CAGtG+I1v21Xl5AS69V1aZTx90EBSgRuQ3g9MgyK6jDO3esp8+6DCD0m5/IShAxVi7jDKfINDmJ57fVBbsUICa0b6Jst8Hp61Hzp7jjiAoQM1YcZD5ikZ2Ndow1vO4uIOgADWk7VJkybFGjj8SHVnW3+XZ7yv5FmYoQA1JDLRQlF2et2v/xA4FqCnrD3h1W3K95xuyKYIC1JjMR7SnN9qS63rdmXQQFOA/IPMSGcqmb9LKv+X/5ec5EBQA2RAUANmYQWm1WgQFgIsZFD5SDcDLDEoYGCUoAFzYoQDIhqAAyIagAMjGDkpxiKAAcDGDUhQMZQH4mEEZGC0ICgAXZigAsiEoALIxgxIGGMoC8DGDMl8wQwHgw5EHQDYEBUA2BAVANl2GsrzYBsCHHQqAbAgKgGwICoBsmKEAyIYdCoBs9KBMxe8EzeYpPgi5aQAAAABJRU5ErkJggg==" InformativeScreenshot="4595df96c60e5af455e9477d8b88b9d6.png" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' title='Calculator' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="40, 32, 288, 492" FilePath="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" InformativeScreenshot="ad07fae755c1ad7826f874ce5ec8b991.png" Selector="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' title='Calculator' /&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
