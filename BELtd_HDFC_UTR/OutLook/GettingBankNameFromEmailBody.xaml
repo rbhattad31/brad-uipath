@@ -1,15 +1,22 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="GettingBankNameFromEmailBody" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_UnreadEmailsCount" Type="InArgument(x:Int32)" />
-    <x:Property Name="in_BankNames" Type="InArgument(x:String)" />
     <x:Property Name="in_ListMailMessages" Type="InArgument(scg:List(snm:MailMessage))" />
     <x:Property Name="in_CurrentDateFolderPath" Type="InArgument(x:String)" />
     <x:Property Name="out_DictAttachmentInfo" Type="OutArgument(scg:Dictionary(x:String, scg:List(x:String)))" />
+    <x:Property Name="in_BankFolderName" Type="InArgument(x:String)" />
+    <x:Property Name="in_SearchString_HDFC_UTR" Type="InArgument(x:String)" />
+    <x:Property Name="in_ToEmail" Type="InArgument(x:String)" />
+    <x:Property Name="in_VendorAccountsExcelPath" Type="InArgument(x:String)" />
+    <x:Property Name="in_HDFCUTR_MailBody_RegularExpression" Type="InArgument(x:String)" />
+    <x:Property Name="In_VendorBankAccountsSheetName" Type="InArgument(x:String)" />
+    <x:Property Name="in_AttachmentNotFoundBody" Type="InArgument(x:String)" />
+    <x:Property Name="in_AttachmentNotFoundSubject" Type="InArgument(x:String)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1847,2978</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1847,3220</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GettingBankNameFromEmailBody_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="37">
@@ -89,9 +96,10 @@
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GettingBankNameFromEmailBody" sap:VirtualizedContainerService.HintSize="1857,2913" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GettingBankNameFromEmailBody" sap:VirtualizedContainerService.HintSize="1857,3155" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Name="strSearchKeywords" />
     </Sequence.Variables>
@@ -106,11 +114,11 @@
         <OutArgument x:TypeArguments="s:String[]">[strSearchKeywords]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="s:String[]">[in_BankNames.Split(","c)]</InArgument>
+        <InArgument x:TypeArguments="s:String[]">[in_SearchString_HDFC_UTR.Split(","c)]</InArgument>
       </Assign.Value>
     </Assign>
     <ui:LogMessage DisplayName="Log Message 'Unread Emails Count'" sap:VirtualizedContainerService.HintSize="1815,91" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Unread Emails Count: &quot; + in_UnreadEmailsCount.ToString]" />
-    <If Condition="[in_UnreadEmailsCount&gt;0]" DisplayName="If 'Unread Emails Validating'" sap:VirtualizedContainerService.HintSize="1815,2590" sap2010:WorkflowViewState.IdRef="If_3">
+    <If Condition="[in_UnreadEmailsCount&gt;0]" DisplayName="If 'Unread Emails Validating'" sap:VirtualizedContainerService.HintSize="1815,2832" sap2010:WorkflowViewState.IdRef="If_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -118,7 +126,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <If.Then>
-        <Sequence DisplayName="UnreadEmailsFound" sap:VirtualizedContainerService.HintSize="1570,2432" sap2010:WorkflowViewState.IdRef="Sequence_11">
+        <Sequence DisplayName="UnreadEmailsFound" sap:VirtualizedContainerService.HintSize="1570,2674" sap2010:WorkflowViewState.IdRef="Sequence_11">
           <Sequence.Variables>
             <Variable x:TypeArguments="scg:Dictionary(x:String, scg:List(x:String))" Name="DictAttachmentInfo" />
           </Sequence.Variables>
@@ -137,25 +145,25 @@
               <InArgument x:TypeArguments="scg:Dictionary(x:String, scg:List(x:String))">[New Dictionary(Of String, List(Of String))()]</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="{x:Null}" DisplayName="For Each 'List Mail Messages'" sap:VirtualizedContainerService.HintSize="1528,2109" sap2010:WorkflowViewState.IdRef="ForEach`1_13" Values="[in_ListMailMessages]">
+          <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="{x:Null}" DisplayName="For Each 'List Mail Messages'" sap:VirtualizedContainerService.HintSize="1528,2351" sap2010:WorkflowViewState.IdRef="ForEach`1_13" Values="[in_ListMailMessages]">
             <ui:ForEach.Body>
               <ActivityAction x:TypeArguments="snm:MailMessage">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="snm:MailMessage" Name="MailMessageItem" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1492,1985" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1492,2227" sap2010:WorkflowViewState.IdRef="Sequence_42">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each 'Bank Name'" sap:VirtualizedContainerService.HintSize="1450,1893" sap2010:WorkflowViewState.IdRef="ForEach`1_12" Values="[strSearchKeywords]">
+                  <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each 'Bank Name'" sap:VirtualizedContainerService.HintSize="1450,2135" sap2010:WorkflowViewState.IdRef="ForEach`1_12" Values="[strSearchKeywords]">
                     <ui:ForEach.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Object" Name="SearchKeyword" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1414,1769" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1414,2011" sap2010:WorkflowViewState.IdRef="Sequence_41">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="IEnumAccountNumber" />
                           </Sequence.Variables>
@@ -165,8 +173,8 @@
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:LogMessage DisplayName="Log Message 'Display bank names'" sap:VirtualizedContainerService.HintSize="1372,91" sap2010:WorkflowViewState.IdRef="LogMessage_24" Level="Info" Message="[&quot;Bank Name: &quot; +  SearchKeyword.ToString]" />
-                          <If Condition="[MailMessageItem.Body.Contains(SearchKeyword.ToString)]" DisplayName="If 'Checking EmailBody Contains Bank Name Or Not'" sap:VirtualizedContainerService.HintSize="1372,1546" sap2010:WorkflowViewState.IdRef="If_9">
+                          <ui:LogMessage DisplayName="Log Message 'Display bank names'" sap:VirtualizedContainerService.HintSize="1372,91" sap2010:WorkflowViewState.IdRef="LogMessage_24" Level="Info" Message="[&quot;HDFC UTR Search keyword is: &quot; +  SearchKeyword.ToString]" />
+                          <If Condition="[MailMessageItem.Body.Contains(SearchKeyword.ToString)]" DisplayName="If 'Checking EmailBody Contains Bank Name Or Not'" sap:VirtualizedContainerService.HintSize="1372,1788" sap2010:WorkflowViewState.IdRef="If_9">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -174,14 +182,14 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <If.Then>
-                              <Sequence sap:VirtualizedContainerService.HintSize="849,1388" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                              <Sequence sap:VirtualizedContainerService.HintSize="849,1630" sap2010:WorkflowViewState.IdRef="Sequence_38">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <If Condition="[MailMessageItem.Attachments.Any]" DisplayName="If 'Checking Attachments Found Or Not'" sap:VirtualizedContainerService.HintSize="807,1296" sap2010:WorkflowViewState.IdRef="If_8">
+                                <If Condition="[MailMessageItem.Attachments.Any]" DisplayName="If 'Checking Attachments Found Or Not'" sap:VirtualizedContainerService.HintSize="807,1538" sap2010:WorkflowViewState.IdRef="If_8">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -189,7 +197,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <If.Then>
-                                    <Sequence DisplayName="AttachmentFound" sap:VirtualizedContainerService.HintSize="386,1138" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                    <Sequence DisplayName="AttachmentFound" sap:VirtualizedContainerService.HintSize="386,1380" sap2010:WorkflowViewState.IdRef="Sequence_36">
                                       <Sequence.Variables>
                                         <Variable x:TypeArguments="x:String" Name="strBankFolderPath" />
                                         <Variable x:TypeArguments="x:String" Name="str_Last4Digits" />
@@ -212,17 +220,38 @@
                                           <InArgument x:TypeArguments="x:String">[MailMessageItem.Attachments(0).Name]</InArgument>
                                         </Assign.Value>
                                       </Assign>
-                                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke CreatingBankFolder workflow" sap:VirtualizedContainerService.HintSize="344,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="OutLook\CreatingBankFolder.xaml">
-                                        <ui:InvokeWorkflowFile.Arguments>
-                                          <InArgument x:TypeArguments="x:String" x:Key="in_CurrentDateFilePath">[in_CurrentDateFolderPath]</InArgument>
-                                          <InArgument x:TypeArguments="x:String" x:Key="in_BankName">[SearchKeyword.ToString]</InArgument>
-                                          <OutArgument x:TypeArguments="x:String" x:Key="out_BnakPath">[strBankFolderPath]</OutArgument>
-                                        </ui:InvokeWorkflowFile.Arguments>
-                                      </ui:InvokeWorkflowFile>
+                                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="344,51" sap2010:WorkflowViewState.IdRef="CommentOut_12">
+                                        <ui:CommentOut.Body>
+                                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,204" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke CreatingBankFolder workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="OutLook\CreatingBankFolder.xaml">
+                                              <ui:InvokeWorkflowFile.Arguments>
+                                                <InArgument x:TypeArguments="x:String" x:Key="in_CurrentDateFilePath">[in_CurrentDateFolderPath]</InArgument>
+                                                <OutArgument x:TypeArguments="x:String" x:Key="out_BnakPath">[strBankFolderPath]</OutArgument>
+                                                <InArgument x:TypeArguments="x:String" x:Key="in_BankFolderName">[in_BankFolderName]</InArgument>
+                                              </ui:InvokeWorkflowFile.Arguments>
+                                            </ui:InvokeWorkflowFile>
+                                          </Sequence>
+                                        </ui:CommentOut.Body>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:CommentOut>
                                       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke SaveAttachment workflow" sap:VirtualizedContainerService.HintSize="344,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="OutLook\SaveAttachment.xaml">
                                         <ui:InvokeWorkflowFile.Arguments>
-                                          <InArgument x:TypeArguments="snm:MailMessage" x:Key="in_FullFilePath">[MailMessageItem]</InArgument>
-                                          <InArgument x:TypeArguments="x:String" x:Key="in_BankFilePath">[strBankFolderPath]</InArgument>
+                                          <InArgument x:TypeArguments="snm:MailMessage" x:Key="in_FullFilePath">
+                                            <mva:VisualBasicValue x:TypeArguments="snm:MailMessage" ExpressionText="MailMessageItem" />
+                                          </InArgument>
+                                          <InArgument x:TypeArguments="x:String" x:Key="in_BankFilePath">
+                                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_CurrentDateFolderPath" />
+                                          </InArgument>
                                         </ui:InvokeWorkflowFile.Arguments>
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -231,7 +260,8 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </ui:InvokeWorkflowFile>
-                                      <ui:Matches BuilderPattern="[x]{2,13}[0-9]{4}" DisplayName="Get Masked numbers list from email body" sap:VirtualizedContainerService.HintSize="344,59" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[MailMessageItem.body]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;[x]{2,13}[0-9]{4}&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="[x]{2,13}[0-9]{4}" RegexOption="IgnoreCase, Compiled" Result="[IEnumAccountNumber]" />
+                                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="344,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[in_HDFCUTR_MailBody_RegularExpression]" />
+                                      <ui:Matches BuilderPattern="" DisplayName="Get Masked numbers list from email body" sap:VirtualizedContainerService.HintSize="344,59" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[MailMessageItem.body]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="[in_HDFCUTR_MailBody_RegularExpression]" RegexOption="IgnoreCase, Compiled" Result="[IEnumAccountNumber]" />
                                       <Assign DisplayName="Get 1st Masked Number as string" sap:VirtualizedContainerService.HintSize="344,60" sap2010:WorkflowViewState.IdRef="Assign_5">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="x:String">[str_AccountNumber]</OutArgument>
@@ -240,6 +270,7 @@
                                           <InArgument x:TypeArguments="x:String">[IEnumAccountNumber(0).tostring()]</InArgument>
                                         </Assign.Value>
                                       </Assign>
+                                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="344,61" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[str_AccountNumber]" />
                                       <Assign DisplayName="Get Last 4 digits of numbers" sap:VirtualizedContainerService.HintSize="344,60" sap2010:WorkflowViewState.IdRef="Assign_4">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="x:String">[str_Last4Digits]</OutArgument>
@@ -248,11 +279,21 @@
                                           <InArgument x:TypeArguments="x:String">[str_AccountNumber.substring(str_AccountNumber.length-4, 4)]</InArgument>
                                         </Assign.Value>
                                       </Assign>
+                                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="344,61" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[str_Last4Digits]" />
                                       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="344,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_16" UnSafe="False" WorkflowFileName="GetPasswordFromVendorBankAccounts.xaml">
                                         <ui:InvokeWorkflowFile.Arguments>
-                                          <InArgument x:TypeArguments="x:String" x:Key="In_VendorAccountsExcelPath">Data\Vendor bank accounts.XLSX</InArgument>
-                                          <OutArgument x:TypeArguments="scg:List(x:String)" x:Key="Out_PasswordList">[ListPasswords]</OutArgument>
-                                          <InArgument x:TypeArguments="x:String" x:Key="In_Account_Number_Last_4">[str_Last4Digits]</InArgument>
+                                          <InArgument x:TypeArguments="x:String" x:Key="In_VendorAccountsExcelPath">
+                                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="In_VendorAccountsExcelPath" />
+                                          </InArgument>
+                                          <OutArgument x:TypeArguments="scg:List(x:String)" x:Key="Out_PasswordList">
+                                            <mva:VisualBasicReference x:TypeArguments="scg:List(x:String)" ExpressionText="ListPasswords" />
+                                          </OutArgument>
+                                          <InArgument x:TypeArguments="x:String" x:Key="In_Account_Number_Last_4">
+                                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="str_Last4Digits" />
+                                          </InArgument>
+                                          <InArgument x:TypeArguments="x:String" x:Key="In_VendorBankAccountsSheetName">
+                                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="In_VendorBankAccountsSheetName" />
+                                          </InArgument>
                                         </ui:InvokeWorkflowFile.Arguments>
                                       </ui:InvokeWorkflowFile>
                                       <Assign sap:VirtualizedContainerService.HintSize="344,60" sap2010:WorkflowViewState.IdRef="Assign_10">
@@ -276,9 +317,15 @@
                                       <ui:LogMessage DisplayName="Log Message 'AttachmentNotFound'" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="Info" Message="[&quot;Attachment Not Found&quot;]" />
                                       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke SendEmail_ToUser workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="SendEmail_ToUser.xaml">
                                         <ui:InvokeWorkflowFile.Arguments>
-                                          <InArgument x:TypeArguments="x:String" x:Key="in_ToEmail">kalyan.gundu@bradsol.com</InArgument>
-                                          <InArgument x:TypeArguments="x:String" x:Key="in_Body">["Hi Team, &lt;p&gt; Attachment Not for "+in_BankNames.ToString]</InArgument>
-                                          <InArgument x:TypeArguments="x:String" x:Key="in_Subject">[SearchKeyword.ToString+" Attachment Not Found"]</InArgument>
+                                          <InArgument x:TypeArguments="x:String" x:Key="in_ToEmail">
+                                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_ToEmail" />
+                                          </InArgument>
+                                          <InArgument x:TypeArguments="x:String" x:Key="in_Body">
+                                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_AttachmentNotFoundBody" />
+                                          </InArgument>
+                                          <InArgument x:TypeArguments="x:String" x:Key="in_Subject">
+                                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_AttachmentNotFoundSubject" />
+                                          </InArgument>
                                         </ui:InvokeWorkflowFile.Arguments>
                                       </ui:InvokeWorkflowFile>
                                       <Throw Exception="[new BusinessRuleException(SearchKeyword.ToString+&quot; Attachment not Found &quot;)]" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Throw_7" />

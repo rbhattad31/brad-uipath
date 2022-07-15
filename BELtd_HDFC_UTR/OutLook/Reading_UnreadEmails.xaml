@@ -7,7 +7,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1047,903</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1240,995</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Reading_UnreadEmails_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="39">
@@ -92,7 +92,7 @@
       <AssemblyReference>NPOI</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Reading_UnreadEmails" sap:VirtualizedContainerService.HintSize="376,838" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Reading_UnreadEmails" sap:VirtualizedContainerService.HintSize="376,930" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtInputdata" />
       <Variable x:TypeArguments="scg:List(snm:MailMessage)" Name="list_MailMessages" />
@@ -104,7 +104,14 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message 'Reading Unread Emails Xaml Started'" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Reading_UnreadEmails Xaml Execution Started&quot;]" />
-    <ui:GetOutlookMailMessages Account="{x:Null}" Filter="{x:Null}" FilterByMessageIds="{x:Null}" DisplayName="Get Outlook Mail Messages" GetAttachements="False" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="GetOutlookMailMessages_1" MailFolder="[in_EmailFolder]" MarkAsRead="False" Messages="[list_MailMessages]" OnlyUnreadMessages="True" OrderByDate="NewestFirst" TimeoutMS="100000" Top="30" />
+    <Sequence DisplayName="Outlook retry mechanism - In progress" sap:VirtualizedContainerService.HintSize="334,114" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:GetOutlookMailMessages Account="{x:Null}" Filter="{x:Null}" FilterByMessageIds="{x:Null}" DisplayName="Get Outlook Mail Messages" GetAttachements="False" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="GetOutlookMailMessages_1" MailFolder="[in_EmailFolder]" MarkAsRead="False" Messages="[list_MailMessages]" OnlyUnreadMessages="True" OrderByDate="NewestFirst" TimeoutMS="100000" Top="30" />
+    </Sequence>
     <ui:LogMessage DisplayName="Log Message 'UnreadEmailsCount'" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Unread Emails Count :: &quot;+list_MailMessages.Count.ToString]" />
     <Assign DisplayName="Assign 'List Mail Messages Count'" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_5">
       <Assign.To>

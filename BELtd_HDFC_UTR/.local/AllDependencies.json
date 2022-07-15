@@ -9480,11 +9480,11 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "BELtd_HDFC_Kalyan",
-      "projectName": "BELtd_HDFC_Kalyan",
-      "projectPath": "C:\\Users\\naviii\\Documents\\UiPath\\BELtd_HDFC_Kalyan\\.local",
+      "projectUniqueName": "BELtd_HDFC_UTR",
+      "projectName": "BELtd_HDFC_UTR",
+      "projectPath": "C:\\Users\\naviii\\Documents\\UiPath\\BELtd_HDFC_UTR_3.0\\.local",
       "packagesPath": "C:\\Users\\naviii\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\naviii\\Documents\\UiPath\\BELtd_HDFC_Kalyan\\.local"
+      "outputPath": "C:\\Users\\naviii\\Documents\\UiPath\\BELtd_HDFC_UTR_3.0\\.local"
     },
     "frameworks": {
       "net461": {
