@@ -1,6 +1,5 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="Send_Mail_R" this:Send_Mail_R.in_Exchange_Domain="https://outlook.office.com/mail/" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="in_Email_Settings" Type="InArgument(x:String)" />
     <x:Property Name="in_Attachment" Type="InArgument(x:String)" />
     <x:Property Name="in_EmailBody" Type="InArgument(x:String)" />
     <x:Property Name="in_Subject" Type="InArgument(x:String)" />
@@ -9,13 +8,11 @@
     <x:Property Name="in_FronName" Type="InArgument(x:String)" />
     <x:Property Name="in_FromEmail" Type="InArgument(x:String)" />
     <x:Property Name="in_Exchange_Domain" Type="InArgument(x:String)" />
-    <x:Property Name="in_Exchange_Cred" Type="InArgument(x:String)" />
     <x:Property Name="in_SMTP_Port" Type="InArgument(x:String)" />
-    <x:Property Name="in_Server" Type="InArgument(x:String)" />
     <x:Property Name="in_Mail_Environment" Type="InArgument(x:String)" />
     <x:Property Name="in_username" Type="InArgument(x:String)" />
     <x:Property Name="in_Password" Type="InArgument(x:String)" />
-    <x:Property Name="argument1" Type="InArgument(x:String)" />
+    <x:Property Name="in_SMTP_Server" Type="InArgument(x:String)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
@@ -165,7 +162,7 @@
                                 <av:Size x:Key="ShapeSize">200,52.8</av:Size>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:SendMail Bcc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Body="[in_EmailBody]" Cc="[in_EmailCc]" DisplayName="Send SMTP Mail Message" Email="[in_username]" EnableSSL="True" From="[in_FromEmail]" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="SendMail_3" IsBodyHtml="True" Name="[in_FronName]" Password="[in_Password]" Port="[CInt(in_SMTP_Port)]" SecureConnection="Auto" Server="[in_Server]" Subject="[in_Subject]" To="[in_EmailTo]">
+                            <ui:SendMail Bcc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Body="[in_EmailBody]" Cc="[in_EmailCc]" DisplayName="Send SMTP Mail Message" Email="[in_username]" EnableSSL="True" From="[in_FromEmail]" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="SendMail_3" IsBodyHtml="True" Name="[in_FronName]" Password="[in_Password]" Port="[CInt(in_SMTP_Port)]" SecureConnection="Auto" Server="[in_SMTP_Server]" Subject="[in_Subject]" To="[in_EmailTo]">
                               <ui:SendMail.Files>
                                 <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
                               </ui:SendMail.Files>
@@ -185,7 +182,7 @@
                                 <av:Size x:Key="ShapeSize">200,52.8</av:Size>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:SendMail Bcc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" AttachmentsCollection="[Split(in_Attachment,&quot;I&quot;)]" Body="[in_EmailBody]" Cc="[in_EmailCc]" DisplayName="Send SMTP Mail Message" Email="[in_username]" EnableSSL="True" From="[in_FromEmail]" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="SendMail_4" IsBodyHtml="True" Name="[in_FronName]" Password="[in_Password]" Port="[CInt(in_SMTP_Port)]" SecureConnection="Auto" Server="[in_Server]" Subject="[in_Subject]" To="[in_EmailTo]">
+                            <ui:SendMail Bcc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" AttachmentsCollection="[Split(in_Attachment,&quot;I&quot;)]" Body="[in_EmailBody]" Cc="[in_EmailCc]" DisplayName="Send SMTP Mail Message" Email="[in_username]" EnableSSL="True" From="[in_FromEmail]" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="SendMail_4" IsBodyHtml="True" Name="[in_FronName]" Password="[in_Password]" Port="[CInt(in_SMTP_Port)]" SecureConnection="Auto" Server="[in_SMTP_Server]" Subject="[in_Subject]" To="[in_EmailTo]">
                               <ui:SendMail.Files>
                                 <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
                               </ui:SendMail.Files>
@@ -293,7 +290,7 @@
                       <av:Size x:Key="ShapeSize">200,52.8</av:Size>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Flowchart DisplayName="EXCHANGE" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="Flowchart_3">
+                  <Flowchart DisplayName="EXCHANGE" sap:VirtualizedContainerService.HintSize="633.6,636.8" sap2010:WorkflowViewState.IdRef="Flowchart_3">
                     <Flowchart.Variables>
                       <Variable x:TypeArguments="x:String" Name="str_ExchangeServer" />
                       <Variable x:TypeArguments="x:String" Name="str_ExchangeDomain" />
