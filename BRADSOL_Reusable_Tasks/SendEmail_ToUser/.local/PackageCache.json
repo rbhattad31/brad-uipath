@@ -11,10 +11,10 @@
         "C:\\Users\\TEMP\\.nuget\\packages\\documentformat.openxml\\2.5.0\\lib/DocumentFormat.OpenXml.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.visualstudio.ole.interop\\16.7.30328.74\\lib/net45/Microsoft.VisualStudio.OLE.Interop.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\npoi\\2.5.5\\lib/net45/NPOI.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\npoi\\2.5.5\\lib/net45/NPOI.OOXML.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\npoi\\2.5.5\\lib/net45/NPOI.OpenXml4Net.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\npoi\\2.5.5\\lib/net45/NPOI.OpenXmlFormats.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\npoi\\2.5.5\\lib/net45/NPOI.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\lib/net40/BouncyCastle.Crypto.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\sharpziplib\\1.3.3\\lib/net45/ICSharpCode.SharpZipLib.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/net40/System.IO.Abstractions.dll",
@@ -24,8 +24,8 @@
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.excel.activities\\2.12.3\\lib/net461/Microsoft.Vbe.Interop.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.excel.activities\\2.12.3\\lib/net461/Office.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.excel.activities\\2.12.3\\lib/net461/UiPath.Excel.Activities.Design.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.excel.activities\\2.12.3\\lib/net461/UiPath.Excel.Activities.Package.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.excel.activities\\2.12.3\\lib/net461/UiPath.Excel.Activities.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.excel.activities\\2.12.3\\lib/net461/UiPath.Excel.Activities.Package.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.excel.activities\\2.12.3\\lib/net461/UiPath.Excel.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.platform\\22.4.1\\lib/net461/UiPath.Platform.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\lib/net461/TelemetryClient.dll"
@@ -38,10 +38,10 @@
         "Version": "1.15.2"
       },
       "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\google.apis\\1.55.0\\lib/net45/Google.Apis.PlatformServices.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\google.apis\\1.55.0\\lib/net45/Google.Apis.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib/net461/Google.Apis.Auth.PlatformServices.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\google.apis\\1.55.0\\lib/net45/Google.Apis.PlatformServices.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib/net461/Google.Apis.Auth.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib/net461/Google.Apis.Auth.PlatformServices.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\google.apis.calendar.v3\\1.55.0.2554\\lib/net45/Google.Apis.Calendar.v3.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\google.apis.core\\1.55.0\\lib/net45/Google.Apis.Core.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\google.apis.gmail.v1\\1.55.0.2510\\lib/net45/Google.Apis.Gmail.v1.dll",
@@ -51,15 +51,14 @@
         "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.exchange.webservices\\2.2.0\\lib/40/Microsoft.Exchange.WebServices.Auth.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.exchange.webservices\\2.2.0\\lib/40/Microsoft.Exchange.WebServices.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\5.0.0\\lib/net461/Microsoft.Extensions.FileSystemGlobbing.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.identity.client\\4.45.0\\lib/net461/Microsoft.Identity.Client.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.identity.client.desktop\\4.45.0\\lib/net461/Microsoft.Identity.Client.Desktop.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.18.0\\lib/net461/Microsoft.IdentityModel.Abstractions.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.identity.client\\4.35.1\\lib/net461/Microsoft.Identity.Client.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.identity.client.desktop\\4.35.1\\lib/net461/Microsoft.Identity.Client.Desktop.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.12.2\\lib/net461/Microsoft.IdentityModel.JsonWebTokens.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.identitymodel.logging\\6.12.2\\lib/net461/Microsoft.IdentityModel.Logging.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.12.2\\lib/net461/Microsoft.IdentityModel.Tokens.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.web.webview2\\1.0.1072.54\\lib/net45/Microsoft.Web.WebView2.Core.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.web.webview2\\1.0.1072.54\\lib/net45/Microsoft.Web.WebView2.WinForms.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.web.webview2\\1.0.1072.54\\lib/net45/Microsoft.Web.WebView2.Wpf.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.web.webview2\\1.0.864.35\\lib/net45/Microsoft.Web.WebView2.Core.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.web.webview2\\1.0.864.35\\lib/net45/Microsoft.Web.WebView2.WinForms.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.web.webview2\\1.0.864.35\\lib/net45/Microsoft.Web.WebView2.Wpf.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\mimekit\\3.1.1\\lib/net46/MimeKit.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib/net45/Newtonsoft.Json.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\nito.asyncex.context\\5.1.0\\lib/netstandard2.0/Nito.AsyncEx.Context.dll",
@@ -87,8 +86,8 @@
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.mail.activities\\1.15.2\\lib/net461/Microsoft.Office.Interop.Word.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.mail.activities\\1.15.2\\lib/net461/Office.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.mail.activities\\1.15.2\\lib/net461/UiPath.Mail.Activities.Design.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.mail.activities\\1.15.2\\lib/net461/UiPath.Mail.Activities.Package.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.mail.activities\\1.15.2\\lib/net461/UiPath.Mail.Activities.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.mail.activities\\1.15.2\\lib/net461/UiPath.Mail.Activities.Package.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.mail.activities\\1.15.2\\lib/net461/UiPath.Mail.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.mail.activities\\1.15.2\\lib/net461/UiPath.MainSessionServer.Shared.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.platform\\22.4.1\\lib/net461/UiPath.Platform.dll",
@@ -98,51 +97,21 @@
     },
     {
       "Package": {
-        "Id": "UiPath.PDF.Activities",
-        "Version": "3.7.1-preview"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\bitmiracle.docotic.pdf\\7.5.11645\\lib/net46/BitMiracle.Docotic.Pdf.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\bitmiracle.libtiff.net\\2.4.649\\lib/net40/BitMiracle.LibTiff.NET.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib/net45/Newtonsoft.Json.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\ntextcat\\0.3.65\\lib/netstandard2.0/NTextCat.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.buffers\\4.5.1\\lib/net461/System.Buffers.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.collections.immutable\\5.0.0\\lib/net461/System.Collections.Immutable.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.drawing.common\\5.0.2\\lib/net461/System.Drawing.Common.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.drawing.primitives\\4.3.0\\lib/net45/System.Drawing.Primitives.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/net40/System.IO.Abstractions.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.memory\\4.5.4\\lib/net461/System.Memory.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\lib/net46/System.Numerics.Vectors.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.threading.tasks.dataflow\\5.0.0\\lib/net461/System.Threading.Tasks.Dataflow.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.valuetuple\\4.5.0\\lib/net461/System.ValueTuple.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.documentprocessing.contracts\\1.15.0-preview\\lib/net461/UiPath.DocumentProcessing.Contracts.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.documentunderstanding.digitizer\\2.1.1-preview\\lib/net461/UiPath.DocumentUnderstanding.Digitizer.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.ocr.contracts\\2.12.0-preview\\lib/net461/UiPath.OCR.Contracts.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.pdf.activities\\3.7.1-preview\\lib/net461/UiPath.PDF.Activities.Design.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.pdf.activities\\3.7.1-preview\\lib/net461/UiPath.PDF.Activities.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.pdf.activities\\3.7.1-preview\\lib/net461/UiPath.PDF.Telemetry.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.pdf.activities\\3.7.1-preview\\lib/net461/UiPath.PDF.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\lib/net461/TelemetryClient.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\uipath.pdf.activities\\3.7.1-preview"
-    },
-    {
-      "Package": {
         "Id": "UiPath.System.Activities",
         "Version": "22.4.1"
       },
       "Assemblies": [
         "C:\\Users\\TEMP\\.nuget\\packages\\csvhelper\\16.0.0\\lib/net45/CsvHelper.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.aspnet.signalr.client\\2.4.0\\lib/net45/Microsoft.AspNet.SignalR.Client.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\7.0.0-preview.5.22303.8\\lib/netstandard2.0/Microsoft.AspNetCore.Connections.Abstractions.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.Connections.Abstractions.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.aspnetcore.http.connections.client\\3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Connections.Client.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.aspnetcore.http.connections.common\\3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Connections.Common.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.aspnetcore.http.features\\3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.aspnetcore.signalr.client\\3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Client.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core\\3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Client.Core.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.aspnetcore.signalr.common\\3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Common.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.codeanalysis.common\\3.8.0\\lib/netstandard2.0/Microsoft.CodeAnalysis.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.codeanalysis.csharp\\3.8.0\\lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.codeanalysis.visualbasic\\3.8.0\\lib/netstandard2.0/Microsoft.CodeAnalysis.VisualBasic.dll",
@@ -151,19 +120,18 @@
         "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.6\\lib/net461/Microsoft.Extensions.DependencyInjection.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.6\\lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.extensions.features\\7.0.0-preview.5.22303.8\\lib/netstandard2.0/Microsoft.Extensions.Features.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.extensions.logging\\3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Logging.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.extensions.options\\3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Options.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.23\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.21\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib/net45/Newtonsoft.Json.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\sharpziplib\\1.3.3\\lib/net45/ICSharpCode.SharpZipLib.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\system.buffers\\4.5.1\\lib/net461/System.Buffers.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\system.collections.immutable\\5.0.0\\lib/net461/System.Collections.Immutable.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\lib/net461/System.ComponentModel.Annotations.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/net40/System.IO.Abstractions.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.io.pipelines\\7.0.0-preview.5.22301.12\\lib/netstandard2.0/System.IO.Pipelines.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\system.io.pipelines\\4.7.1\\lib/netstandard2.0/System.IO.Pipelines.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\system.management.automation\\6.1.7601.17515\\lib/net45/System.Management.Automation.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\system.memory\\4.5.4\\lib/net461/System.Memory.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\lib/net46/System.Numerics.Vectors.dll",
@@ -186,144 +154,12 @@
     },
     {
       "Package": {
-        "Id": "UiPath.Testing.Activities",
-        "Version": "22.4.3"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\automapper\\9.0.0\\lib/net461/AutoMapper.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.23\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib/net45/Newtonsoft.Json.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/net40/System.IO.Abstractions.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.threading.tasks.dataflow\\5.0.0\\lib/net461/System.Threading.Tasks.Dataflow.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\lib/net461/System.Threading.Tasks.Extensions.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.valuetuple\\4.5.0\\lib/net461/System.ValueTuple.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.platform\\22.4.1\\lib/net461/UiPath.Platform.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\lib/net461/TelemetryClient.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.testing.activities\\22.4.3\\lib/net461/UiPath.Testing.Activities.Design.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.testing.activities\\22.4.3\\lib/net461/UiPath.Testing.Activities.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.testing.activities\\22.4.3\\lib/net461/UiPath.Testing.RulesLibrary.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.testing.activities\\22.4.3\\lib/net461/UiPath.Testing.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\uipath.testing.activities\\22.4.3"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.Persistence.Activities",
-        "Version": "1.4.1"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.23\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib/net45/Newtonsoft.Json.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.buffers\\4.5.1\\lib/net461/System.Buffers.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.memory\\4.5.4\\lib/net461/System.Memory.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\lib/net46/System.Numerics.Vectors.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.resources.extensions\\5.0.0\\lib/net461/System.Resources.Extensions.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.threading.tasks.dataflow\\5.0.0\\lib/net461/System.Threading.Tasks.Dataflow.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.valuetuple\\4.5.0\\lib/net461/System.ValueTuple.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.formactivitylibrary.contracts\\2.0.1-preview\\lib/net461/UiPath.Form.ActivityLibrary.Contracts.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.persistence.activities\\1.4.1\\lib/net461/UiPath.Orchestrator.Service.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.persistence.activities\\1.4.1\\lib/net461/UiPath.Persistence.Activities.Design.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.persistence.activities\\1.4.1\\lib/net461/UiPath.Persistence.Activities.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.persistence.activities\\1.4.1\\lib/net461/UiPath.Persistence.Orchestrator.Client.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\lib/net461/TelemetryClient.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\uipath.persistence.activities\\1.4.1"
-    },
-    {
-      "Package": {
-        "Id": "Microsoft.Activities.Extensions",
-        "Version": "2.0.6.9"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.activities.extensions\\2.0.6.9\\lib/Net45/Microsoft.Activities.Extensions.Design.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.activities.extensions\\2.0.6.9\\lib/Net45/Microsoft.Activities.Extensions.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.activities.extensions\\2.0.6.9"
-    },
-    {
-      "Package": {
-        "Id": "Microsoft.AspNetCore.Connections.Abstractions",
-        "Version": "7.0.0-preview.5.22303.8"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\7.0.0-preview.5.22303.8\\lib/netstandard2.0/Microsoft.AspNetCore.Connections.Abstractions.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.extensions.features\\7.0.0-preview.5.22303.8\\lib/netstandard2.0/Microsoft.Extensions.Features.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.buffers\\4.5.1\\lib/net461/System.Buffers.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.io.pipelines\\7.0.0-preview.5.22301.12\\lib/netstandard2.0/System.IO.Pipelines.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.memory\\4.5.4\\lib/net461/System.Memory.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\lib/net46/System.Numerics.Vectors.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\lib/net461/System.Threading.Tasks.Extensions.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\7.0.0-preview.5.22303.8"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.Form.Activities",
-        "Version": "2.0.1-preview"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\castle.core\\4.4.0\\lib/net45/Castle.Core.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\h.formatters\\2.0.35\\lib/net451/H.Formatters.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\h.formatters.binaryformatter\\2.0.35\\lib/net451/H.Formatters.BinaryFormatter.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\h.pipes\\2.0.35\\lib/net461/H.Pipes.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.web.webview2\\1.0.1072.54\\lib/net45/Microsoft.Web.WebView2.Core.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.web.webview2\\1.0.1072.54\\lib/net45/Microsoft.Web.WebView2.WinForms.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.web.webview2\\1.0.1072.54\\lib/net45/Microsoft.Web.WebView2.Wpf.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib/net45/Newtonsoft.Json.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.buffers\\4.5.1\\lib/net461/System.Buffers.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.drawing.common\\5.0.2\\lib/net461/System.Drawing.Common.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/net40/System.IO.Abstractions.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.memory\\4.5.4\\lib/net461/System.Memory.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\lib/net46/System.Numerics.Vectors.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.resources.extensions\\5.0.0\\lib/net461/System.Resources.Extensions.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.threading.tasks.dataflow\\5.0.0\\lib/net461/System.Threading.Tasks.Dataflow.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\lib/net461/System.Threading.Tasks.Extensions.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.valuetuple\\4.5.0\\lib/net461/System.ValueTuple.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.form.activities\\2.0.1-preview\\lib/net461/System.Resources.Extensions.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.form.activities\\2.0.1-preview\\lib/net461/UiPath.Form.Activities.Design.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.form.activities\\2.0.1-preview\\lib/net461/UiPath.Form.Activities.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.formactivitylibrary\\2.0.1-preview\\lib/net461/UiPath.Form.ActivityLibrary.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.formactivitylibrary\\2.0.1-preview\\lib/net461/UiPath.Form.Host.Local.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.formactivitylibrary\\2.0.1-preview\\lib/net461/UiPath.Form.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.formactivitylibrary\\2.0.1-preview\\lib/net461/UiPath.OutOfProcessUi.Common.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.formactivitylibrary.contracts\\2.0.1-preview\\lib/net461/UiPath.Form.ActivityLibrary.Contracts.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\lib/net461/TelemetryClient.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\uipath.form.activities\\2.0.1-preview"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.Word.Activities",
-        "Version": "1.10.1"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.word.activities\\1.10.1\\lib/net461/Interop.Domino.UiPath.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.word.activities\\1.10.1\\lib/net461/Microsoft.Office.Interop.Word.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.word.activities\\1.10.1\\lib/net461/Office.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.word.activities\\1.10.1\\lib/net461/UiPath.Word.Activities.Design.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.word.activities\\1.10.1\\lib/net461/UiPath.Word.Activities.Package.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.word.activities\\1.10.1\\lib/net461/UiPath.Word.Activities.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.word.activities\\1.10.1\\lib/net461/UiPath.Word.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\xceed.document.net\\2.0.21359.11160\\lib/net40/Xceed.Document.NET.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\xceed.pdf\\2.0.21359.11160\\lib/net40/Xceed.Pdf.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\xceed.words.net\\2.0.21359.11160\\lib/net40/Xceed.Words.NET.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\uipath.word.activities\\1.10.1"
-    },
-    {
-      "Package": {
         "Id": "UiPath.UIAutomation.Activities",
-        "Version": "22.4.6"
+        "Version": "22.4.5"
       },
       "Assemblies": [
         "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision\\7.0.1\\lib/net461/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.23\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.21\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.18\\lib/net452/Microsoft.Rest.ClientRuntime.Azure.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib/net45/Newtonsoft.Json.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\nlog\\4.5.11\\lib/net45/NLog.dll",
@@ -342,97 +178,31 @@
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.ocr.activities\\3.6.2\\lib/net461/UiPath.OCR.Activities.Design.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.ocr.activities\\3.6.2\\lib/net461/UiPath.OCR.Activities.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.ocr.activities\\3.6.2\\lib/net461/UiPath.OCR.Core.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.ocr.contracts\\2.12.0-preview\\lib/net461/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.ocr.contracts\\2.11.0\\lib/net461/UiPath.OCR.Contracts.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.platform\\22.4.1\\lib/net461/UiPath.Platform.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\lib/net461/TelemetryClient.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.6\\lib/net461/UiPath.CV.Activities.Design.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.6\\lib/net461/UiPath.CV.Activities.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.6\\lib/net461/UiPath.CV.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.6\\lib/net461/UiPath.UIAutomation.Activities.Design.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.6\\lib/net461/UiPath.UIAutomationCore.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.6\\lib/net461/UiPath.UIAutomationNext.Activities.Design.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.6\\lib/net461/UiPath.UIAutomationNext.Activities.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.6\\lib/net461/UiPath.UIAutomationNext.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.6\\lib/net461/UiPath.UiAutomation.Activities.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.6\\lib/net461/UiPath.Wizards.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.5\\lib/net461/UiPath.CV.Activities.Design.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.5\\lib/net461/UiPath.CV.Activities.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.5\\lib/net461/UiPath.CV.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.5\\lib/net461/UiPath.UIAutomation.Activities.Design.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.5\\lib/net461/UiPath.UiAutomation.Activities.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.5\\lib/net461/UiPath.UIAutomationCore.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.5\\lib/net461/UiPath.UIAutomationNext.Activities.Design.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.5\\lib/net461/UiPath.UIAutomationNext.Activities.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.5\\lib/net461/UiPath.UIAutomationNext.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.5\\lib/net461/UiPath.Wizards.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.vision\\3.3.0\\lib/net461/UiPath.Vision.AzureComputerVision.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.vision\\3.3.0\\lib/net461/UiPath.Vision.Core.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.vision\\3.3.0\\lib/net461/UiPath.Vision.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.vision\\3.3.0\\lib/net461/UiPath.Vision.GoogleCloud.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.vision\\3.3.0\\lib/net461/UiPath.Vision.Microsoft.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.vision\\3.3.0\\lib/net461/UiPath.Vision.Tesseract.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.vision\\3.3.0\\lib/net461/UiPath.Vision.dll"
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.vision\\3.3.0\\lib/net461/UiPath.Vision.Tesseract.dll"
       ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.6"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.Presentations.Activities",
-        "Version": "1.3.4"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.presentations.activities\\1.3.4\\lib/net461/Microsoft.Office.Interop.PowerPoint.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.presentations.activities\\1.3.4\\lib/net461/Microsoft.Vbe.Interop.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.presentations.activities\\1.3.4\\lib/net461/Office.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.presentations.activities\\1.3.4\\lib/net461/UiPath.Presentations.Activities.Design.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.presentations.activities\\1.3.4\\lib/net461/UiPath.Presentations.Activities.Package.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.presentations.activities\\1.3.4\\lib/net461/UiPath.Presentations.Activities.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.presentations.activities\\1.3.4\\lib/net461/UiPath.Presentations.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\uipath.presentations.activities\\1.3.4"
-    },
-    {
-      "Package": {
-        "Id": "Microsoft.Identity.Client.Desktop",
-        "Version": "4.45.0"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.identity.client\\4.45.0\\lib/net461/Microsoft.Identity.Client.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.identity.client.desktop\\4.45.0\\lib/net461/Microsoft.Identity.Client.Desktop.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.18.0\\lib/net461/Microsoft.IdentityModel.Abstractions.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.web.webview2\\1.0.1072.54\\lib/net45/Microsoft.Web.WebView2.Core.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.web.webview2\\1.0.1072.54\\lib/net45/Microsoft.Web.WebView2.WinForms.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.web.webview2\\1.0.1072.54\\lib/net45/Microsoft.Web.WebView2.Wpf.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.identity.client.desktop\\4.45.0"
-    },
-    {
-      "Package": {
-        "Id": "Microsoft.Activities",
-        "Version": "1.0.1"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib/net45/Microsoft.Activities.Design.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib/net45/Microsoft.Activities.Design.Services.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib/net45/Microsoft.Activities.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib/net45/Microsoft.Workflow.Client.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib/net45/Microsoft.Workflow.Common.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib/net45/Microsoft.Workflow.Tracing.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.activities\\1.0.1"
+      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.5"
     }
   ],
   "Conflicts": [],
   "ResolvedDependencies": {
-    "AutoMapper": {
-      "Id": "AutoMapper",
-      "Version": "9.0.0",
-      "Dependencies": []
-    },
-    "BitMiracle.Docotic.Pdf": {
-      "Id": "BitMiracle.Docotic.Pdf",
-      "Version": "7.5.11645",
-      "Dependencies": []
-    },
-    "BitMiracle.LibTiff.NET": {
-      "Id": "BitMiracle.LibTiff.NET",
-      "Version": "2.4.649",
-      "Dependencies": []
-    },
-    "Castle.Core": {
-      "Id": "Castle.Core",
-      "Version": "4.4.0",
-      "Dependencies": []
-    },
     "ClosedXML": {
       "Id": "ClosedXML",
       "Version": "0.87.1",
@@ -538,35 +308,6 @@
         }
       ]
     },
-    "H.Formatters": {
-      "Id": "H.Formatters",
-      "Version": "2.0.35",
-      "Dependencies": []
-    },
-    "H.Formatters.BinaryFormatter": {
-      "Id": "H.Formatters.BinaryFormatter",
-      "Version": "2.0.35",
-      "Dependencies": [
-        {
-          "Item1": "H.Formatters",
-          "Item2": "[2.0.35, )"
-        }
-      ]
-    },
-    "H.Pipes": {
-      "Id": "H.Pipes",
-      "Version": "2.0.35",
-      "Dependencies": [
-        {
-          "Item1": "H.Formatters.BinaryFormatter",
-          "Item2": "[2.0.35, )"
-        },
-        {
-          "Item1": "Microsoft.Bcl.AsyncInterfaces",
-          "Item2": "[6.0.0, )"
-        }
-      ]
-    },
     "HtmlAgilityPack": {
       "Id": "HtmlAgilityPack",
       "Version": "1.11.38",
@@ -582,16 +323,6 @@
         }
       ]
     },
-    "Microsoft.Activities": {
-      "Id": "Microsoft.Activities",
-      "Version": "1.0.1",
-      "Dependencies": []
-    },
-    "Microsoft.Activities.Extensions": {
-      "Id": "Microsoft.Activities.Extensions",
-      "Version": "2.0.6.9",
-      "Dependencies": []
-    },
     "Microsoft.AspNet.SignalR.Client": {
       "Id": "Microsoft.AspNet.SignalR.Client",
       "Version": "2.4.0",
@@ -604,19 +335,19 @@
     },
     "Microsoft.AspNetCore.Connections.Abstractions": {
       "Id": "Microsoft.AspNetCore.Connections.Abstractions",
-      "Version": "7.0.0-preview.5.22303.8",
+      "Version": "3.1.6",
       "Dependencies": [
         {
-          "Item1": "Microsoft.Extensions.Features",
-          "Item2": "[7.0.0-preview.5.22303.8, )"
+          "Item1": "Microsoft.AspNetCore.Http.Features",
+          "Item2": "[3.1.6, )"
         },
         {
           "Item1": "Microsoft.Bcl.AsyncInterfaces",
-          "Item2": "[1.0.0, )"
+          "Item2": "[1.1.1, )"
         },
         {
           "Item1": "System.IO.Pipelines",
-          "Item2": "[7.0.0-preview.5.22301.12, )"
+          "Item2": "[4.7.1, )"
         }
       ]
     },
@@ -649,6 +380,20 @@
         {
           "Item1": "System.Text.Json",
           "Item2": "[4.7.2, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Features": {
+      "Id": "Microsoft.AspNetCore.Http.Features",
+      "Version": "3.1.6",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.Primitives",
+          "Item2": "[3.1.6, )"
+        },
+        {
+          "Item1": "System.IO.Pipelines",
+          "Item2": "[4.7.1, )"
         }
       ]
     },
@@ -744,7 +489,7 @@
     },
     "Microsoft.Bcl.AsyncInterfaces": {
       "Id": "Microsoft.Bcl.AsyncInterfaces",
-      "Version": "6.0.0",
+      "Version": "1.1.1",
       "Dependencies": [
         {
           "Item1": "System.Threading.Tasks.Extensions",
@@ -870,11 +615,6 @@
       "Version": "3.1.6",
       "Dependencies": []
     },
-    "Microsoft.Extensions.Features": {
-      "Id": "Microsoft.Extensions.Features",
-      "Version": "7.0.0-preview.5.22303.8",
-      "Dependencies": []
-    },
     "Microsoft.Extensions.FileSystemGlobbing": {
       "Id": "Microsoft.Extensions.FileSystemGlobbing",
       "Version": "5.0.0",
@@ -941,21 +681,16 @@
     },
     "Microsoft.Identity.Client": {
       "Id": "Microsoft.Identity.Client",
-      "Version": "4.45.0",
-      "Dependencies": [
-        {
-          "Item1": "Microsoft.IdentityModel.Abstractions",
-          "Item2": "[6.18.0, )"
-        }
-      ]
+      "Version": "4.35.1",
+      "Dependencies": []
     },
     "Microsoft.Identity.Client.Desktop": {
       "Id": "Microsoft.Identity.Client.Desktop",
-      "Version": "4.45.0",
+      "Version": "4.35.1",
       "Dependencies": [
         {
           "Item1": "Microsoft.Identity.Client",
-          "Item2": "[4.45.0, )"
+          "Item2": "[4.35.1, )"
         },
         {
           "Item1": "Microsoft.Web.WebView2",
@@ -966,11 +701,6 @@
           "Item2": "[10.0.17763.1000, )"
         }
       ]
-    },
-    "Microsoft.IdentityModel.Abstractions": {
-      "Id": "Microsoft.IdentityModel.Abstractions",
-      "Version": "6.18.0",
-      "Dependencies": []
     },
     "Microsoft.IdentityModel.JsonWebTokens": {
       "Id": "Microsoft.IdentityModel.JsonWebTokens",
@@ -999,7 +729,7 @@
     },
     "Microsoft.Rest.ClientRuntime": {
       "Id": "Microsoft.Rest.ClientRuntime",
-      "Version": "2.3.23",
+      "Version": "2.3.21",
       "Dependencies": [
         {
           "Item1": "Newtonsoft.Json",
@@ -1033,7 +763,7 @@
     },
     "Microsoft.Web.WebView2": {
       "Id": "Microsoft.Web.WebView2",
-      "Version": "1.0.1072.54",
+      "Version": "1.0.864.35",
       "Dependencies": []
     },
     "Microsoft.Windows.SDK.Contracts": {
@@ -1197,11 +927,6 @@
         }
       ]
     },
-    "NTextCat": {
-      "Id": "NTextCat",
-      "Version": "0.3.65",
-      "Dependencies": []
-    },
     "Polly": {
       "Id": "Polly",
       "Version": "7.1.0",
@@ -1237,16 +962,6 @@
       "Version": "4.7.0",
       "Dependencies": []
     },
-    "System.Drawing.Common": {
-      "Id": "System.Drawing.Common",
-      "Version": "5.0.2",
-      "Dependencies": []
-    },
-    "System.Drawing.Primitives": {
-      "Id": "System.Drawing.Primitives",
-      "Version": "4.3.0",
-      "Dependencies": []
-    },
     "System.IdentityModel.Tokens.Jwt": {
       "Id": "System.IdentityModel.Tokens.Jwt",
       "Version": "6.12.2",
@@ -1268,19 +983,19 @@
     },
     "System.IO.Pipelines": {
       "Id": "System.IO.Pipelines",
-      "Version": "7.0.0-preview.5.22301.12",
+      "Version": "4.7.1",
       "Dependencies": [
         {
           "Item1": "System.Buffers",
-          "Item2": "[4.5.1, )"
+          "Item2": "[4.5.0, )"
         },
         {
           "Item1": "System.Memory",
-          "Item2": "[4.5.4, )"
+          "Item2": "[4.5.3, )"
         },
         {
           "Item1": "System.Threading.Tasks.Extensions",
-          "Item2": "[4.5.4, )"
+          "Item2": "[4.5.2, )"
         }
       ]
     },
@@ -1319,16 +1034,6 @@
         {
           "Item1": "System.Collections.Immutable",
           "Item2": "[5.0.0, )"
-        }
-      ]
-    },
-    "System.Resources.Extensions": {
-      "Id": "System.Resources.Extensions",
-      "Version": "5.0.0",
-      "Dependencies": [
-        {
-          "Item1": "System.Memory",
-          "Item2": "[4.5.4, )"
         }
       ]
     },
@@ -1482,50 +1187,6 @@
         }
       ]
     },
-    "UiPath.DocumentProcessing.Contracts": {
-      "Id": "UiPath.DocumentProcessing.Contracts",
-      "Version": "1.15.0-preview",
-      "Dependencies": [
-        {
-          "Item1": "Newtonsoft.Json",
-          "Item2": "[11.0.2, )"
-        }
-      ]
-    },
-    "UiPath.DocumentUnderstanding.Digitizer": {
-      "Id": "UiPath.DocumentUnderstanding.Digitizer",
-      "Version": "2.1.1-preview",
-      "Dependencies": [
-        {
-          "Item1": "BitMiracle.Docotic.Pdf",
-          "Item2": "[7.5.11645, )"
-        },
-        {
-          "Item1": "System.Drawing.Common",
-          "Item2": "[5.0.2, )"
-        },
-        {
-          "Item1": "System.Drawing.Primitives",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Collections.Immutable",
-          "Item2": "[1.5.0, )"
-        },
-        {
-          "Item1": "NTextCat",
-          "Item2": "[0.3.65, )"
-        },
-        {
-          "Item1": "BitMiracle.LibTiff.NET",
-          "Item2": "[2.4.649, )"
-        },
-        {
-          "Item1": "UiPath.DocumentProcessing.Contracts",
-          "Item2": "[1.15.0-preview, )"
-        }
-      ]
-    },
     "UiPath.Excel.Activities": {
       "Id": "UiPath.Excel.Activities",
       "Version": "2.12.3",
@@ -1561,92 +1222,6 @@
         {
           "Item1": "UiPath.Telemetry.Client",
           "Item2": "[1.5.3, )"
-        }
-      ]
-    },
-    "UiPath.Form.Activities": {
-      "Id": "UiPath.Form.Activities",
-      "Version": "2.0.1-preview",
-      "Dependencies": [
-        {
-          "Item1": "Castle.Core",
-          "Item2": "[4.4.0, )"
-        },
-        {
-          "Item1": "Microsoft.Web.WebView2",
-          "Item2": "[1.0.1072.54, )"
-        },
-        {
-          "Item1": "System.IO.Abstractions",
-          "Item2": "[3.0.10, )"
-        },
-        {
-          "Item1": "System.Resources.Extensions",
-          "Item2": "[5.0.0, )"
-        },
-        {
-          "Item1": "System.Runtime.CompilerServices.Unsafe",
-          "Item2": "[4.7.1, )"
-        },
-        {
-          "Item1": "System.Threading.Tasks.Extensions",
-          "Item2": "[4.5.4, )"
-        },
-        {
-          "Item1": "UiPath.FormActivityLibrary",
-          "Item2": "[2.0.1-preview, )"
-        },
-        {
-          "Item1": "UiPath.Telemetry.Client",
-          "Item2": "[1.3.18, )"
-        }
-      ]
-    },
-    "UiPath.FormActivityLibrary": {
-      "Id": "UiPath.FormActivityLibrary",
-      "Version": "2.0.1-preview",
-      "Dependencies": [
-        {
-          "Item1": "H.Pipes",
-          "Item2": "[2.0.35, )"
-        },
-        {
-          "Item1": "Microsoft.Web.WebView2",
-          "Item2": "[1.0.1072.54, )"
-        },
-        {
-          "Item1": "Newtonsoft.Json",
-          "Item2": "[11.0.2, )"
-        },
-        {
-          "Item1": "System.Drawing.Common",
-          "Item2": "[5.0.2, )"
-        },
-        {
-          "Item1": "System.Runtime.CompilerServices.Unsafe",
-          "Item2": "[4.7.1, )"
-        },
-        {
-          "Item1": "System.ValueTuple",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "UiPath.FormActivityLibrary.Contracts",
-          "Item2": "[2.0.1-preview, )"
-        },
-        {
-          "Item1": "UiPath.WebView2.Runtime.x86",
-          "Item2": "[0.1.0, )"
-        }
-      ]
-    },
-    "UiPath.FormActivityLibrary.Contracts": {
-      "Id": "UiPath.FormActivityLibrary.Contracts",
-      "Version": "2.0.1-preview",
-      "Dependencies": [
-        {
-          "Item1": "System.Resources.Extensions",
-          "Item2": "[5.0.0, )"
         }
       ]
     },
@@ -1761,68 +1336,8 @@
     },
     "UiPath.OCR.Contracts": {
       "Id": "UiPath.OCR.Contracts",
-      "Version": "2.12.0-preview",
+      "Version": "2.11.0",
       "Dependencies": []
-    },
-    "UiPath.PDF.Activities": {
-      "Id": "UiPath.PDF.Activities",
-      "Version": "3.7.1-preview",
-      "Dependencies": [
-        {
-          "Item1": "BitMiracle.Docotic.Pdf",
-          "Item2": "[7.5.11645, )"
-        },
-        {
-          "Item1": "Newtonsoft.Json",
-          "Item2": "[11.0.2, )"
-        },
-        {
-          "Item1": "System.IO.Abstractions",
-          "Item2": "[3.0.10, )"
-        },
-        {
-          "Item1": "System.Threading.Tasks.Dataflow",
-          "Item2": "[5.0.0, )"
-        },
-        {
-          "Item1": "System.ValueTuple",
-          "Item2": "[4.5.0, )"
-        },
-        {
-          "Item1": "UiPath.DocumentUnderstanding.Digitizer",
-          "Item2": "[2.1.1-preview, )"
-        },
-        {
-          "Item1": "UiPath.OCR.Contracts",
-          "Item2": "[2.12.0-preview, )"
-        },
-        {
-          "Item1": "UiPath.Telemetry.Client",
-          "Item2": "[1.5.3, )"
-        }
-      ]
-    },
-    "UiPath.Persistence.Activities": {
-      "Id": "UiPath.Persistence.Activities",
-      "Version": "1.4.1",
-      "Dependencies": [
-        {
-          "Item1": "Microsoft.Rest.ClientRuntime",
-          "Item2": "[2.3.23, )"
-        },
-        {
-          "Item1": "Newtonsoft.Json",
-          "Item2": "[11.0.2, )"
-        },
-        {
-          "Item1": "UiPath.FormActivityLibrary.Contracts",
-          "Item2": "[1.9.2, )"
-        },
-        {
-          "Item1": "UiPath.Telemetry.Client",
-          "Item2": "[1.5.3, )"
-        }
-      ]
     },
     "UiPath.Platform": {
       "Id": "UiPath.Platform",
@@ -1841,11 +1356,6 @@
           "Item2": "[4.5.0, )"
         }
       ]
-    },
-    "UiPath.Presentations.Activities": {
-      "Id": "UiPath.Presentations.Activities",
-      "Version": "1.3.4",
-      "Dependencies": []
     },
     "UiPath.System.Activities": {
       "Id": "UiPath.System.Activities",
@@ -1927,39 +1437,9 @@
         }
       ]
     },
-    "UiPath.Testing.Activities": {
-      "Id": "UiPath.Testing.Activities",
-      "Version": "22.4.3",
-      "Dependencies": [
-        {
-          "Item1": "AutoMapper",
-          "Item2": "[9.0.0, )"
-        },
-        {
-          "Item1": "Microsoft.Rest.ClientRuntime",
-          "Item2": "[2.3.21, )"
-        },
-        {
-          "Item1": "Newtonsoft.Json",
-          "Item2": "[11.0.2, )"
-        },
-        {
-          "Item1": "System.Threading.Tasks.Extensions",
-          "Item2": "[4.5.4, )"
-        },
-        {
-          "Item1": "UiPath.Platform",
-          "Item2": "[22.4.1, )"
-        },
-        {
-          "Item1": "UiPath.Telemetry.Client",
-          "Item2": "[1.5.3, )"
-        }
-      ]
-    },
     "UiPath.UIAutomation.Activities": {
       "Id": "UiPath.UIAutomation.Activities",
-      "Version": "22.4.6",
+      "Version": "22.4.5",
       "Dependencies": [
         {
           "Item1": "UiPath",
@@ -2012,93 +1492,9 @@
           "Item2": "[2.11.0, )"
         }
       ]
-    },
-    "UiPath.WebView2.Runtime.x86": {
-      "Id": "UiPath.WebView2.Runtime.x86",
-      "Version": "0.1.0",
-      "Dependencies": []
-    },
-    "UiPath.Word.Activities": {
-      "Id": "UiPath.Word.Activities",
-      "Version": "1.10.1",
-      "Dependencies": [
-        {
-          "Item1": "Xceed.Words.NET",
-          "Item2": "[2.0.21359.11160, )"
-        }
-      ]
-    },
-    "Xceed.Document.NET": {
-      "Id": "Xceed.Document.NET",
-      "Version": "2.0.21359.11160",
-      "Dependencies": [
-        {
-          "Item1": "Xceed.Pdf",
-          "Item2": "[2.0.21359.11160, 2.0.21359.11160]"
-        }
-      ]
-    },
-    "Xceed.Pdf": {
-      "Id": "Xceed.Pdf",
-      "Version": "2.0.21359.11160",
-      "Dependencies": []
-    },
-    "Xceed.Words.NET": {
-      "Id": "Xceed.Words.NET",
-      "Version": "2.0.21359.11160",
-      "Dependencies": [
-        {
-          "Item1": "Xceed.Document.NET",
-          "Item2": "[2.0.21359.11160, 2.0.21359.11160]"
-        },
-        {
-          "Item1": "Xceed.Pdf",
-          "Item2": "[2.0.21359.11160, 2.0.21359.11160]"
-        }
-      ]
     }
   },
   "AllPackages": [
-    {
-      "Package": {
-        "Id": "AutoMapper",
-        "Version": "9.0.0"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\automapper\\9.0.0\\lib\\net461\\AutoMapper.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\automapper\\9.0.0"
-    },
-    {
-      "Package": {
-        "Id": "BitMiracle.Docotic.Pdf",
-        "Version": "7.5.11645"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\bitmiracle.docotic.pdf\\7.5.11645\\lib\\net46\\BitMiracle.Docotic.Pdf.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\bitmiracle.docotic.pdf\\7.5.11645"
-    },
-    {
-      "Package": {
-        "Id": "BitMiracle.LibTiff.NET",
-        "Version": "2.4.649"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\bitmiracle.libtiff.net\\2.4.649\\lib\\net40\\BitMiracle.LibTiff.NET.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\bitmiracle.libtiff.net\\2.4.649"
-    },
-    {
-      "Package": {
-        "Id": "Castle.Core",
-        "Version": "4.4.0"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\castle.core\\4.4.0\\lib\\net45\\Castle.Core.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\castle.core\\4.4.0"
-    },
     {
       "Package": {
         "Id": "ClosedXML",
@@ -2135,8 +1531,8 @@
         "Version": "1.55.0"
       },
       "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\google.apis\\1.55.0\\lib\\net45\\Google.Apis.PlatformServices.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\google.apis\\1.55.0\\lib\\net45\\Google.Apis.dll"
+        "C:\\Users\\TEMP\\.nuget\\packages\\google.apis\\1.55.0\\lib\\net45\\Google.Apis.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\google.apis\\1.55.0\\lib\\net45\\Google.Apis.PlatformServices.dll"
       ],
       "Path": "C:\\Users\\TEMP\\.nuget\\packages\\google.apis\\1.55.0"
     },
@@ -2146,8 +1542,8 @@
         "Version": "1.55.0"
       },
       "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib\\net461\\Google.Apis.Auth.PlatformServices.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib\\net461\\Google.Apis.Auth.dll"
+        "C:\\Users\\TEMP\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib\\net461\\Google.Apis.Auth.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib\\net461\\Google.Apis.Auth.PlatformServices.dll"
       ],
       "Path": "C:\\Users\\TEMP\\.nuget\\packages\\google.apis.auth\\1.55.0"
     },
@@ -2193,36 +1589,6 @@
     },
     {
       "Package": {
-        "Id": "H.Formatters",
-        "Version": "2.0.35"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\h.formatters\\2.0.35\\lib\\net451\\H.Formatters.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\h.formatters\\2.0.35"
-    },
-    {
-      "Package": {
-        "Id": "H.Formatters.BinaryFormatter",
-        "Version": "2.0.35"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\h.formatters.binaryformatter\\2.0.35\\lib\\net451\\H.Formatters.BinaryFormatter.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\h.formatters.binaryformatter\\2.0.35"
-    },
-    {
-      "Package": {
-        "Id": "H.Pipes",
-        "Version": "2.0.35"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\h.pipes\\2.0.35\\lib\\net461\\H.Pipes.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\h.pipes\\2.0.35"
-    },
-    {
-      "Package": {
         "Id": "HtmlAgilityPack",
         "Version": "1.11.38"
       },
@@ -2243,32 +1609,6 @@
     },
     {
       "Package": {
-        "Id": "Microsoft.Activities",
-        "Version": "1.0.1"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib\\net45\\Microsoft.Activities.Design.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib\\net45\\Microsoft.Activities.Design.Services.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib\\net45\\Microsoft.Activities.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib\\net45\\Microsoft.Workflow.Client.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib\\net45\\Microsoft.Workflow.Common.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib\\net45\\Microsoft.Workflow.Tracing.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.activities\\1.0.1"
-    },
-    {
-      "Package": {
-        "Id": "Microsoft.Activities.Extensions",
-        "Version": "2.0.6.9"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.activities.extensions\\2.0.6.9\\lib\\Net45\\Microsoft.Activities.Extensions.Design.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.activities.extensions\\2.0.6.9\\lib\\Net45\\Microsoft.Activities.Extensions.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.activities.extensions\\2.0.6.9"
-    },
-    {
-      "Package": {
         "Id": "Microsoft.AspNet.SignalR.Client",
         "Version": "2.4.0"
       },
@@ -2280,12 +1620,12 @@
     {
       "Package": {
         "Id": "Microsoft.AspNetCore.Connections.Abstractions",
-        "Version": "7.0.0-preview.5.22303.8"
+        "Version": "3.1.6"
       },
       "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\7.0.0-preview.5.22303.8\\lib\\netstandard2.0\\Microsoft.AspNetCore.Connections.Abstractions.dll"
+        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\3.1.6\\lib\\netstandard2.0\\Microsoft.AspNetCore.Connections.Abstractions.dll"
       ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\7.0.0-preview.5.22303.8"
+      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\3.1.6"
     },
     {
       "Package": {
@@ -2306,6 +1646,16 @@
         "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.aspnetcore.http.connections.common\\3.1.6\\lib\\netstandard2.0\\Microsoft.AspNetCore.Http.Connections.Common.dll"
       ],
       "Path": "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.aspnetcore.http.connections.common\\3.1.6"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.AspNetCore.Http.Features",
+        "Version": "3.1.6"
+      },
+      "Assemblies": [
+        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.aspnetcore.http.features\\3.1.6\\lib\\netstandard2.0\\Microsoft.AspNetCore.Http.Features.dll"
+      ],
+      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.aspnetcore.http.features\\3.1.6"
     },
     {
       "Package": {
@@ -2360,12 +1710,12 @@
     {
       "Package": {
         "Id": "Microsoft.Bcl.AsyncInterfaces",
-        "Version": "6.0.0"
+        "Version": "1.1.1"
       },
       "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\lib\\net461\\Microsoft.Bcl.AsyncInterfaces.dll"
+        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\lib\\net461\\Microsoft.Bcl.AsyncInterfaces.dll"
       ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0"
+      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1"
     },
     {
       "Package": {
@@ -2478,16 +1828,6 @@
     },
     {
       "Package": {
-        "Id": "Microsoft.Extensions.Features",
-        "Version": "7.0.0-preview.5.22303.8"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.extensions.features\\7.0.0-preview.5.22303.8\\lib\\netstandard2.0\\Microsoft.Extensions.Features.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.extensions.features\\7.0.0-preview.5.22303.8"
-    },
-    {
-      "Package": {
         "Id": "Microsoft.Extensions.FileSystemGlobbing",
         "Version": "5.0.0"
       },
@@ -2539,32 +1879,22 @@
     {
       "Package": {
         "Id": "Microsoft.Identity.Client",
-        "Version": "4.45.0"
+        "Version": "4.35.1"
       },
       "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.identity.client\\4.45.0\\lib\\net461\\Microsoft.Identity.Client.dll"
+        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.identity.client\\4.35.1\\lib\\net461\\Microsoft.Identity.Client.dll"
       ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.identity.client\\4.45.0"
+      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.identity.client\\4.35.1"
     },
     {
       "Package": {
         "Id": "Microsoft.Identity.Client.Desktop",
-        "Version": "4.45.0"
+        "Version": "4.35.1"
       },
       "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.identity.client.desktop\\4.45.0\\lib\\net461\\Microsoft.Identity.Client.Desktop.dll"
+        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.identity.client.desktop\\4.35.1\\lib\\net461\\Microsoft.Identity.Client.Desktop.dll"
       ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.identity.client.desktop\\4.45.0"
-    },
-    {
-      "Package": {
-        "Id": "Microsoft.IdentityModel.Abstractions",
-        "Version": "6.18.0"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.18.0\\lib\\net461\\Microsoft.IdentityModel.Abstractions.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.18.0"
+      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.identity.client.desktop\\4.35.1"
     },
     {
       "Package": {
@@ -2599,12 +1929,12 @@
     {
       "Package": {
         "Id": "Microsoft.Rest.ClientRuntime",
-        "Version": "2.3.23"
+        "Version": "2.3.21"
       },
       "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.23\\lib\\net461\\Microsoft.Rest.ClientRuntime.dll"
+        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.21\\lib\\net461\\Microsoft.Rest.ClientRuntime.dll"
       ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.23"
+      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.21"
     },
     {
       "Package": {
@@ -2639,14 +1969,14 @@
     {
       "Package": {
         "Id": "Microsoft.Web.WebView2",
-        "Version": "1.0.1072.54"
+        "Version": "1.0.864.35"
       },
       "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.web.webview2\\1.0.1072.54\\lib\\net45\\Microsoft.Web.WebView2.Core.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.web.webview2\\1.0.1072.54\\lib\\net45\\Microsoft.Web.WebView2.WinForms.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.web.webview2\\1.0.1072.54\\lib\\net45\\Microsoft.Web.WebView2.Wpf.dll"
+        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.web.webview2\\1.0.864.35\\lib\\net45\\Microsoft.Web.WebView2.Core.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.web.webview2\\1.0.864.35\\lib\\net45\\Microsoft.Web.WebView2.WinForms.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.web.webview2\\1.0.864.35\\lib\\net45\\Microsoft.Web.WebView2.Wpf.dll"
       ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.web.webview2\\1.0.1072.54"
+      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.web.webview2\\1.0.864.35"
     },
     {
       "Package": {
@@ -2780,22 +2110,12 @@
         "Version": "2.5.5"
       },
       "Assemblies": [
+        "C:\\Users\\TEMP\\.nuget\\packages\\npoi\\2.5.5\\lib\\net45\\NPOI.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\npoi\\2.5.5\\lib\\net45\\NPOI.OOXML.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\npoi\\2.5.5\\lib\\net45\\NPOI.OpenXml4Net.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\npoi\\2.5.5\\lib\\net45\\NPOI.OpenXmlFormats.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\npoi\\2.5.5\\lib\\net45\\NPOI.dll"
+        "C:\\Users\\TEMP\\.nuget\\packages\\npoi\\2.5.5\\lib\\net45\\NPOI.OpenXmlFormats.dll"
       ],
       "Path": "C:\\Users\\TEMP\\.nuget\\packages\\npoi\\2.5.5"
-    },
-    {
-      "Package": {
-        "Id": "NTextCat",
-        "Version": "0.3.65"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\ntextcat\\0.3.65\\lib\\netstandard2.0\\NTextCat.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\ntextcat\\0.3.65"
     },
     {
       "Package": {
@@ -2859,26 +2179,6 @@
     },
     {
       "Package": {
-        "Id": "System.Drawing.Common",
-        "Version": "5.0.2"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.drawing.common\\5.0.2\\lib\\net461\\System.Drawing.Common.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\system.drawing.common\\5.0.2"
-    },
-    {
-      "Package": {
-        "Id": "System.Drawing.Primitives",
-        "Version": "4.3.0"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.drawing.primitives\\4.3.0\\lib\\net45\\System.Drawing.Primitives.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\system.drawing.primitives\\4.3.0"
-    },
-    {
-      "Package": {
         "Id": "System.IdentityModel.Tokens.Jwt",
         "Version": "6.12.2"
       },
@@ -2900,12 +2200,12 @@
     {
       "Package": {
         "Id": "System.IO.Pipelines",
-        "Version": "7.0.0-preview.5.22301.12"
+        "Version": "4.7.1"
       },
       "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.io.pipelines\\7.0.0-preview.5.22301.12\\lib\\netstandard2.0\\System.IO.Pipelines.dll"
+        "C:\\Users\\TEMP\\.nuget\\packages\\system.io.pipelines\\4.7.1\\lib\\netstandard2.0\\System.IO.Pipelines.dll"
       ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\system.io.pipelines\\7.0.0-preview.5.22301.12"
+      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\system.io.pipelines\\4.7.1"
     },
     {
       "Package": {
@@ -2946,16 +2246,6 @@
         "C:\\Users\\TEMP\\.nuget\\packages\\system.reflection.metadata\\5.0.0\\lib\\net461\\System.Reflection.Metadata.dll"
       ],
       "Path": "C:\\Users\\TEMP\\.nuget\\packages\\system.reflection.metadata\\5.0.0"
-    },
-    {
-      "Package": {
-        "Id": "System.Resources.Extensions",
-        "Version": "5.0.0"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\system.resources.extensions\\5.0.0\\lib\\net461\\System.Resources.Extensions.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\system.resources.extensions\\5.0.0"
     },
     {
       "Package": {
@@ -3099,26 +2389,6 @@
     },
     {
       "Package": {
-        "Id": "UiPath.DocumentProcessing.Contracts",
-        "Version": "1.15.0-preview"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.documentprocessing.contracts\\1.15.0-preview\\lib\\net461\\UiPath.DocumentProcessing.Contracts.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\uipath.documentprocessing.contracts\\1.15.0-preview"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.DocumentUnderstanding.Digitizer",
-        "Version": "2.1.1-preview"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.documentunderstanding.digitizer\\2.1.1-preview\\lib\\net461\\UiPath.DocumentUnderstanding.Digitizer.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\uipath.documentunderstanding.digitizer\\2.1.1-preview"
-    },
-    {
-      "Package": {
         "Id": "UiPath.Excel.Activities",
         "Version": "2.12.3"
       },
@@ -3127,46 +2397,11 @@
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.excel.activities\\2.12.3\\lib\\net461\\Microsoft.Vbe.Interop.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.excel.activities\\2.12.3\\lib\\net461\\Office.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.excel.activities\\2.12.3\\lib\\net461\\UiPath.Excel.Activities.Design.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.excel.activities\\2.12.3\\lib\\net461\\UiPath.Excel.Activities.Package.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.excel.activities\\2.12.3\\lib\\net461\\UiPath.Excel.Activities.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.excel.activities\\2.12.3\\lib\\net461\\UiPath.Excel.Activities.Package.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.excel.activities\\2.12.3\\lib\\net461\\UiPath.Excel.dll"
       ],
       "Path": "C:\\Users\\TEMP\\.nuget\\packages\\uipath.excel.activities\\2.12.3"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.Form.Activities",
-        "Version": "2.0.1-preview"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.form.activities\\2.0.1-preview\\lib\\net461\\System.Resources.Extensions.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.form.activities\\2.0.1-preview\\lib\\net461\\UiPath.Form.Activities.Design.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.form.activities\\2.0.1-preview\\lib\\net461\\UiPath.Form.Activities.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\uipath.form.activities\\2.0.1-preview"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.FormActivityLibrary",
-        "Version": "2.0.1-preview"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.formactivitylibrary\\2.0.1-preview\\lib\\net461\\UiPath.Form.ActivityLibrary.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.formactivitylibrary\\2.0.1-preview\\lib\\net461\\UiPath.Form.Host.Local.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.formactivitylibrary\\2.0.1-preview\\lib\\net461\\UiPath.Form.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.formactivitylibrary\\2.0.1-preview\\lib\\net461\\UiPath.OutOfProcessUi.Common.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\uipath.formactivitylibrary\\2.0.1-preview"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.FormActivityLibrary.Contracts",
-        "Version": "2.0.1-preview"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.formactivitylibrary.contracts\\2.0.1-preview\\lib\\net461\\UiPath.Form.ActivityLibrary.Contracts.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\uipath.formactivitylibrary.contracts\\2.0.1-preview"
     },
     {
       "Package": {
@@ -3189,8 +2424,8 @@
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.mail.activities\\1.15.2\\lib\\net461\\Microsoft.Office.Interop.Word.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.mail.activities\\1.15.2\\lib\\net461\\Office.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.mail.activities\\1.15.2\\lib\\net461\\UiPath.Mail.Activities.Design.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.mail.activities\\1.15.2\\lib\\net461\\UiPath.Mail.Activities.Package.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.mail.activities\\1.15.2\\lib\\net461\\UiPath.Mail.Activities.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.mail.activities\\1.15.2\\lib\\net461\\UiPath.Mail.Activities.Package.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.mail.activities\\1.15.2\\lib\\net461\\UiPath.Mail.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.mail.activities\\1.15.2\\lib\\net461\\UiPath.MainSessionServer.Shared.dll"
       ],
@@ -3211,38 +2446,12 @@
     {
       "Package": {
         "Id": "UiPath.OCR.Contracts",
-        "Version": "2.12.0-preview"
+        "Version": "2.11.0"
       },
       "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.ocr.contracts\\2.12.0-preview\\lib\\net461\\UiPath.OCR.Contracts.dll"
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.ocr.contracts\\2.11.0\\lib\\net461\\UiPath.OCR.Contracts.dll"
       ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\uipath.ocr.contracts\\2.12.0-preview"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.PDF.Activities",
-        "Version": "3.7.1-preview"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.pdf.activities\\3.7.1-preview\\lib\\net461\\UiPath.PDF.Activities.Design.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.pdf.activities\\3.7.1-preview\\lib\\net461\\UiPath.PDF.Activities.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.pdf.activities\\3.7.1-preview\\lib\\net461\\UiPath.PDF.Telemetry.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.pdf.activities\\3.7.1-preview\\lib\\net461\\UiPath.PDF.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\uipath.pdf.activities\\3.7.1-preview"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.Persistence.Activities",
-        "Version": "1.4.1"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.persistence.activities\\1.4.1\\lib\\net461\\UiPath.Orchestrator.Service.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.persistence.activities\\1.4.1\\lib\\net461\\UiPath.Persistence.Activities.Design.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.persistence.activities\\1.4.1\\lib\\net461\\UiPath.Persistence.Activities.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.persistence.activities\\1.4.1\\lib\\net461\\UiPath.Persistence.Orchestrator.Client.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\uipath.persistence.activities\\1.4.1"
+      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\uipath.ocr.contracts\\2.11.0"
     },
     {
       "Package": {
@@ -3253,22 +2462,6 @@
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.platform\\22.4.1\\lib\\net461\\UiPath.Platform.dll"
       ],
       "Path": "C:\\Users\\TEMP\\.nuget\\packages\\uipath.platform\\22.4.1"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.Presentations.Activities",
-        "Version": "1.3.4"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.presentations.activities\\1.3.4\\lib\\net461\\Microsoft.Office.Interop.PowerPoint.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.presentations.activities\\1.3.4\\lib\\net461\\Microsoft.Vbe.Interop.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.presentations.activities\\1.3.4\\lib\\net461\\Office.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.presentations.activities\\1.3.4\\lib\\net461\\UiPath.Presentations.Activities.Design.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.presentations.activities\\1.3.4\\lib\\net461\\UiPath.Presentations.Activities.Package.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.presentations.activities\\1.3.4\\lib\\net461\\UiPath.Presentations.Activities.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.presentations.activities\\1.3.4\\lib\\net461\\UiPath.Presentations.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\uipath.presentations.activities\\1.3.4"
     },
     {
       "Package": {
@@ -3294,35 +2487,22 @@
     },
     {
       "Package": {
-        "Id": "UiPath.Testing.Activities",
-        "Version": "22.4.3"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.testing.activities\\22.4.3\\lib\\net461\\UiPath.Testing.Activities.Design.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.testing.activities\\22.4.3\\lib\\net461\\UiPath.Testing.Activities.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.testing.activities\\22.4.3\\lib\\net461\\UiPath.Testing.RulesLibrary.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.testing.activities\\22.4.3\\lib\\net461\\UiPath.Testing.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\uipath.testing.activities\\22.4.3"
-    },
-    {
-      "Package": {
         "Id": "UiPath.UIAutomation.Activities",
-        "Version": "22.4.6"
+        "Version": "22.4.5"
       },
       "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.6\\lib\\net461\\UiPath.CV.Activities.Design.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.6\\lib\\net461\\UiPath.CV.Activities.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.6\\lib\\net461\\UiPath.CV.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.6\\lib\\net461\\UiPath.UIAutomation.Activities.Design.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.6\\lib\\net461\\UiPath.UIAutomationCore.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.6\\lib\\net461\\UiPath.UIAutomationNext.Activities.Design.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.6\\lib\\net461\\UiPath.UIAutomationNext.Activities.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.6\\lib\\net461\\UiPath.UIAutomationNext.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.6\\lib\\net461\\UiPath.UiAutomation.Activities.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.6\\lib\\net461\\UiPath.Wizards.dll"
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.5\\lib\\net461\\UiPath.CV.Activities.Design.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.5\\lib\\net461\\UiPath.CV.Activities.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.5\\lib\\net461\\UiPath.CV.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.5\\lib\\net461\\UiPath.UIAutomation.Activities.Design.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.5\\lib\\net461\\UiPath.UiAutomation.Activities.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.5\\lib\\net461\\UiPath.UIAutomationCore.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.5\\lib\\net461\\UiPath.UIAutomationNext.Activities.Design.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.5\\lib\\net461\\UiPath.UIAutomationNext.Activities.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.5\\lib\\net461\\UiPath.UIAutomationNext.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.5\\lib\\net461\\UiPath.Wizards.dll"
       ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.6"
+      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.5"
     },
     {
       "Package": {
@@ -3332,66 +2512,12 @@
       "Assemblies": [
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.vision\\3.3.0\\lib\\net461\\UiPath.Vision.AzureComputerVision.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.vision\\3.3.0\\lib\\net461\\UiPath.Vision.Core.dll",
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.vision\\3.3.0\\lib\\net461\\UiPath.Vision.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.vision\\3.3.0\\lib\\net461\\UiPath.Vision.GoogleCloud.dll",
         "C:\\Users\\TEMP\\.nuget\\packages\\uipath.vision\\3.3.0\\lib\\net461\\UiPath.Vision.Microsoft.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.vision\\3.3.0\\lib\\net461\\UiPath.Vision.Tesseract.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.vision\\3.3.0\\lib\\net461\\UiPath.Vision.dll"
+        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.vision\\3.3.0\\lib\\net461\\UiPath.Vision.Tesseract.dll"
       ],
       "Path": "C:\\Users\\TEMP\\.nuget\\packages\\uipath.vision\\3.3.0"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.WebView2.Runtime.x86",
-        "Version": "0.1.0"
-      },
-      "Assemblies": [],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\uipath.webview2.runtime.x86\\0.1.0"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.Word.Activities",
-        "Version": "1.10.1"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.word.activities\\1.10.1\\lib\\net461\\Interop.Domino.UiPath.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.word.activities\\1.10.1\\lib\\net461\\Microsoft.Office.Interop.Word.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.word.activities\\1.10.1\\lib\\net461\\Office.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.word.activities\\1.10.1\\lib\\net461\\UiPath.Word.Activities.Design.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.word.activities\\1.10.1\\lib\\net461\\UiPath.Word.Activities.Package.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.word.activities\\1.10.1\\lib\\net461\\UiPath.Word.Activities.dll",
-        "C:\\Users\\TEMP\\.nuget\\packages\\uipath.word.activities\\1.10.1\\lib\\net461\\UiPath.Word.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\uipath.word.activities\\1.10.1"
-    },
-    {
-      "Package": {
-        "Id": "Xceed.Document.NET",
-        "Version": "2.0.21359.11160"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\xceed.document.net\\2.0.21359.11160\\lib\\net40\\Xceed.Document.NET.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\xceed.document.net\\2.0.21359.11160"
-    },
-    {
-      "Package": {
-        "Id": "Xceed.Pdf",
-        "Version": "2.0.21359.11160"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\xceed.pdf\\2.0.21359.11160\\lib\\net40\\Xceed.Pdf.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\xceed.pdf\\2.0.21359.11160"
-    },
-    {
-      "Package": {
-        "Id": "Xceed.Words.NET",
-        "Version": "2.0.21359.11160"
-      },
-      "Assemblies": [
-        "C:\\Users\\TEMP\\.nuget\\packages\\xceed.words.net\\2.0.21359.11160\\lib\\net40\\Xceed.Words.NET.dll"
-      ],
-      "Path": "C:\\Users\\TEMP\\.nuget\\packages\\xceed.words.net\\2.0.21359.11160"
     }
   ]
 }
