@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<inputs>
-	<botname> Holidays_bot </botname>
-	<email>kalyanshiva7@gmail.com</email>
-	<LogPath>C:\Users\naviii\Documents\UiPath\Holidays_Calender\log.txt</LogPath>
-	<inputExcelPath>C:\Users\naviii\Documents\UiPath\Holidays_Calender\Calendar.xlsx</inputExcelPath>
-	<outputCSVPath>C:\Users\naviii\Documents\UiPath\Holidays_Calender\Calendar.xlsx</outputCSVPath>
-</inputs>

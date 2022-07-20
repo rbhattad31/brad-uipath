@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<inputs>
-	<botname> Excel_operations_bot </botname>
-	<email>kalyanshiva7@gmail.com</email>
-	<LogPath>log.txt</LogPath>
-	<inputExcelPath>Student_Marks.xlsx</inputExcelPath>
-	<outputCSVPath>OutputCSV.csv</outputCSVPath>
-</inputs>
-

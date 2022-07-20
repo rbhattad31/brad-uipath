@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<inputs>
-	<botname> Excel_operations_bot </botname>
-	<email>kalyanshiva7@gmail.com</email>
-	<LogPath>C:\Users\naviii\Documents\UiPath\Excel_CSV_Datatable\log.txt</LogPath>
-	<inputExcelPath>C:\Users\naviii\Documents\UiPath\Excel_CSV_Datatable\Student_Marks.xlsx</inputExcelPath>
-	<outputCSVPath>C:\Users\naviii\Documents\UiPath\Excel_CSV_Datatable\OutputCSV.csv</outputCSVPath>
-</inputs>
-
