@@ -159,6 +159,9 @@
                   <InArgument x:TypeArguments="x:String" x:Key="in_StrSummaryReportSavingPath">
                     <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;SummaryReportFileSavingPath&quot;).ToString + System.DateTime.Now.ToString(in_Config(&quot;DateFormat&quot;).ToString) + &quot;.xlsx&quot;" />
                   </InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="in_StrSummaryReportCreationPath">
+                    <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_StrSummaryReportFilePath" />
+                  </InArgument>
                 </ui:InvokeWorkflowFile.Arguments>
               </ui:InvokeWorkflowFile>
             </Sequence>

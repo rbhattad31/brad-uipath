@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "saPLZE+q4au2HXJJRTKOOVPlV/rewjLp3d1Im56IeIooTLtrY0yIUe9kkM7Z7qK4K8rtjbKcn+FoSfu+UiDV1g==",
+  "dgSpecHash": "eFBHf4e7HQjZETPHDNnD3MPH+bQhx7PH5MeYj4VQpJbWjAOwKKzI73HmXCRgFIJOP+16d4qIqN/lEfItjGaCyA==",
   "success": true,
   "projectFilePath": "C:\\Users\\BRADSOL\\Documents\\UiPath\\BELtd_HDFC_UTR\\.local\\",
   "expectedPackageFiles": [
@@ -18,6 +18,7 @@
     "C:\\Users\\BRADSOL\\.nuget\\packages\\google.apis.peopleservice.v1\\1.55.0.2567\\google.apis.peopleservice.v1.1.55.0.2567.nupkg.sha512",
     "C:\\Users\\BRADSOL\\.nuget\\packages\\htmlagilitypack\\1.11.38\\htmlagilitypack.1.11.38.nupkg.sha512",
     "C:\\Users\\BRADSOL\\.nuget\\packages\\mailkit\\3.1.1\\mailkit.3.1.1.nupkg.sha512",
+    "C:\\Users\\BRADSOL\\.nuget\\packages\\microsoft.activities\\1.0.1\\microsoft.activities.1.0.1.nupkg.sha512",
     "C:\\Users\\BRADSOL\\.nuget\\packages\\microsoft.aspnet.signalr.client\\2.4.0\\microsoft.aspnet.signalr.client.2.4.0.nupkg.sha512",
     "C:\\Users\\BRADSOL\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\3.1.6\\microsoft.aspnetcore.connections.abstractions.3.1.6.nupkg.sha512",
     "C:\\Users\\BRADSOL\\.nuget\\packages\\microsoft.aspnetcore.http.connections.client\\3.1.6\\microsoft.aspnetcore.http.connections.client.3.1.6.nupkg.sha512",

@@ -166,10 +166,10 @@
         "Version": "1.16.0-preview"
       },
       "Assemblies": [
-        "C:\\Users\\BRADSOL\\.nuget\\packages\\google.apis\\1.55.0\\lib/net45/Google.Apis.dll",
         "C:\\Users\\BRADSOL\\.nuget\\packages\\google.apis\\1.55.0\\lib/net45/Google.Apis.PlatformServices.dll",
-        "C:\\Users\\BRADSOL\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib/net461/Google.Apis.Auth.dll",
+        "C:\\Users\\BRADSOL\\.nuget\\packages\\google.apis\\1.55.0\\lib/net45/Google.Apis.dll",
         "C:\\Users\\BRADSOL\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib/net461/Google.Apis.Auth.PlatformServices.dll",
+        "C:\\Users\\BRADSOL\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib/net461/Google.Apis.Auth.dll",
         "C:\\Users\\BRADSOL\\.nuget\\packages\\google.apis.calendar.v3\\1.55.0.2554\\lib/net45/Google.Apis.Calendar.v3.dll",
         "C:\\Users\\BRADSOL\\.nuget\\packages\\google.apis.core\\1.55.0\\lib/net45/Google.Apis.Core.dll",
         "C:\\Users\\BRADSOL\\.nuget\\packages\\google.apis.gmail.v1\\1.55.0.2510\\lib/net45/Google.Apis.Gmail.v1.dll",
@@ -247,11 +247,26 @@
         "C:\\Users\\BRADSOL\\.nuget\\packages\\uipath.ocr.contracts\\2.12.0-preview\\lib/net461/UiPath.OCR.Contracts.dll",
         "C:\\Users\\BRADSOL\\.nuget\\packages\\uipath.pdf.activities\\3.8.0-preview\\lib/net461/UiPath.PDF.Activities.Design.dll",
         "C:\\Users\\BRADSOL\\.nuget\\packages\\uipath.pdf.activities\\3.8.0-preview\\lib/net461/UiPath.PDF.Activities.dll",
-        "C:\\Users\\BRADSOL\\.nuget\\packages\\uipath.pdf.activities\\3.8.0-preview\\lib/net461/UiPath.PDF.dll",
         "C:\\Users\\BRADSOL\\.nuget\\packages\\uipath.pdf.activities\\3.8.0-preview\\lib/net461/UiPath.PDF.Telemetry.dll",
+        "C:\\Users\\BRADSOL\\.nuget\\packages\\uipath.pdf.activities\\3.8.0-preview\\lib/net461/UiPath.PDF.dll",
         "C:\\Users\\BRADSOL\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\lib/net461/TelemetryClient.dll"
       ],
       "Path": "C:\\Users\\BRADSOL\\.nuget\\packages\\uipath.pdf.activities\\3.8.0-preview"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Activities",
+        "Version": "1.0.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\BRADSOL\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib/net45/Microsoft.Activities.Design.dll",
+        "C:\\Users\\BRADSOL\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib/net45/Microsoft.Activities.Design.Services.dll",
+        "C:\\Users\\BRADSOL\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib/net45/Microsoft.Activities.dll",
+        "C:\\Users\\BRADSOL\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib/net45/Microsoft.Workflow.Client.dll",
+        "C:\\Users\\BRADSOL\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib/net45/Microsoft.Workflow.Common.dll",
+        "C:\\Users\\BRADSOL\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib/net45/Microsoft.Workflow.Tracing.dll"
+      ],
+      "Path": "C:\\Users\\BRADSOL\\.nuget\\packages\\microsoft.activities\\1.0.1"
     }
   ],
   "Conflicts": [],
@@ -390,6 +405,11 @@
           "Item2": "[3.1.1, )"
         }
       ]
+    },
+    "Microsoft.Activities": {
+      "Id": "Microsoft.Activities",
+      "Version": "1.0.1",
+      "Dependencies": []
     },
     "Microsoft.AspNet.SignalR.Client": {
       "Id": "Microsoft.AspNet.SignalR.Client",
@@ -1752,8 +1772,8 @@
         "Version": "1.55.0"
       },
       "Assemblies": [
-        "C:\\Users\\BRADSOL\\.nuget\\packages\\google.apis\\1.55.0\\lib\\net45\\Google.Apis.dll",
-        "C:\\Users\\BRADSOL\\.nuget\\packages\\google.apis\\1.55.0\\lib\\net45\\Google.Apis.PlatformServices.dll"
+        "C:\\Users\\BRADSOL\\.nuget\\packages\\google.apis\\1.55.0\\lib\\net45\\Google.Apis.PlatformServices.dll",
+        "C:\\Users\\BRADSOL\\.nuget\\packages\\google.apis\\1.55.0\\lib\\net45\\Google.Apis.dll"
       ],
       "Path": "C:\\Users\\BRADSOL\\.nuget\\packages\\google.apis\\1.55.0"
     },
@@ -1763,8 +1783,8 @@
         "Version": "1.55.0"
       },
       "Assemblies": [
-        "C:\\Users\\BRADSOL\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib\\net461\\Google.Apis.Auth.dll",
-        "C:\\Users\\BRADSOL\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib\\net461\\Google.Apis.Auth.PlatformServices.dll"
+        "C:\\Users\\BRADSOL\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib\\net461\\Google.Apis.Auth.PlatformServices.dll",
+        "C:\\Users\\BRADSOL\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib\\net461\\Google.Apis.Auth.dll"
       ],
       "Path": "C:\\Users\\BRADSOL\\.nuget\\packages\\google.apis.auth\\1.55.0"
     },
@@ -1827,6 +1847,21 @@
         "C:\\Users\\BRADSOL\\.nuget\\packages\\mailkit\\3.1.1\\lib\\net46\\MailKit.dll"
       ],
       "Path": "C:\\Users\\BRADSOL\\.nuget\\packages\\mailkit\\3.1.1"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Activities",
+        "Version": "1.0.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\BRADSOL\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib\\net45\\Microsoft.Activities.Design.dll",
+        "C:\\Users\\BRADSOL\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib\\net45\\Microsoft.Activities.Design.Services.dll",
+        "C:\\Users\\BRADSOL\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib\\net45\\Microsoft.Activities.dll",
+        "C:\\Users\\BRADSOL\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib\\net45\\Microsoft.Workflow.Client.dll",
+        "C:\\Users\\BRADSOL\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib\\net45\\Microsoft.Workflow.Common.dll",
+        "C:\\Users\\BRADSOL\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib\\net45\\Microsoft.Workflow.Tracing.dll"
+      ],
+      "Path": "C:\\Users\\BRADSOL\\.nuget\\packages\\microsoft.activities\\1.0.1"
     },
     {
       "Package": {
@@ -2731,8 +2766,8 @@
       "Assemblies": [
         "C:\\Users\\BRADSOL\\.nuget\\packages\\uipath.pdf.activities\\3.8.0-preview\\lib\\net461\\UiPath.PDF.Activities.Design.dll",
         "C:\\Users\\BRADSOL\\.nuget\\packages\\uipath.pdf.activities\\3.8.0-preview\\lib\\net461\\UiPath.PDF.Activities.dll",
-        "C:\\Users\\BRADSOL\\.nuget\\packages\\uipath.pdf.activities\\3.8.0-preview\\lib\\net461\\UiPath.PDF.dll",
-        "C:\\Users\\BRADSOL\\.nuget\\packages\\uipath.pdf.activities\\3.8.0-preview\\lib\\net461\\UiPath.PDF.Telemetry.dll"
+        "C:\\Users\\BRADSOL\\.nuget\\packages\\uipath.pdf.activities\\3.8.0-preview\\lib\\net461\\UiPath.PDF.Telemetry.dll",
+        "C:\\Users\\BRADSOL\\.nuget\\packages\\uipath.pdf.activities\\3.8.0-preview\\lib\\net461\\UiPath.PDF.dll"
       ],
       "Path": "C:\\Users\\BRADSOL\\.nuget\\packages\\uipath.pdf.activities\\3.8.0-preview"
     },
