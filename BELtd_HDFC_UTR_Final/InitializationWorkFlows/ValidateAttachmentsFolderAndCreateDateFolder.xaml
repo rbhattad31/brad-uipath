@@ -66,7 +66,6 @@
       <AssemblyReference>System.ValueTuple</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="ValidateAttachmentsFolderAndCreateDateFolder" sap:VirtualizedContainerService.HintSize="1344,1876" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -86,7 +85,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1260,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Date Folder Creation Process is started&quot;]" />
-      <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[BoolAttachmentsFolderExists]" sap:VirtualizedContainerService.HintSize="1260,89" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[In_Config(&quot;AttachmentSavingFolderPath&quot;).ToString]" PathType="Folder" />
+      <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists -Checking Attachments Folder is Exist or not" Exists="[BoolAttachmentsFolderExists]" sap:VirtualizedContainerService.HintSize="1260,89" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[In_Config(&quot;AttachmentSavingFolderPath&quot;).ToString]" PathType="Folder" />
       <If Condition="[BoolAttachmentsFolderExists]" DisplayName="If Attachments Saving Folder Path exists" sap:VirtualizedContainerService.HintSize="1260,1432" sap2010:WorkflowViewState.IdRef="If_2">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -106,7 +105,7 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="797,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Creating Date Folder inside Attachments Folder&quot;]" />
+            <ui:LogMessage DisplayName="Log Message - Date Folder creation started" sap:VirtualizedContainerService.HintSize="797,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Creating Date Folder inside Attachments Folder&quot;]" />
             <Assign DisplayName="Create DateFolder Path" sap:VirtualizedContainerService.HintSize="797,60" sap2010:WorkflowViewState.IdRef="Assign_1">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[StrDateFolderPath]</OutArgument>
@@ -115,9 +114,9 @@
                 <InArgument x:TypeArguments="x:String">[In_Config("AttachmentSavingFolderPath").ToString + System.DateTime.Now.ToString(In_Config("DateFormat").ToString)]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="797,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Creating Folder: &quot;+StrDateFolderPath]" />
-            <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Date Folder" sap:VirtualizedContainerService.HintSize="797,79" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[StrDateFolderPath]" />
-            <ui:PathExists Resource="{x:Null}" DisplayName="Date Folder Path Exists" Exists="[boolDateFolderExists]" sap:VirtualizedContainerService.HintSize="797,89" sap2010:WorkflowViewState.IdRef="PathExists_2" Path="[StrDateFolderPath]" PathType="Folder" />
+            <ui:LogMessage DisplayName="Log Date Folder Path" sap:VirtualizedContainerService.HintSize="797,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Creating Folder: &quot;+StrDateFolderPath]" />
+            <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Date Folder in Attachments Folder" sap:VirtualizedContainerService.HintSize="797,79" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[StrDateFolderPath]" />
+            <ui:PathExists Resource="{x:Null}" DisplayName="Date Folder Path Exists Checking" Exists="[boolDateFolderExists]" sap:VirtualizedContainerService.HintSize="797,89" sap2010:WorkflowViewState.IdRef="PathExists_2" Path="[StrDateFolderPath]" PathType="Folder" />
             <If Condition="[not BoolDateFolderExists]" DisplayName="If Date Folder Doesn't Exist" sap:VirtualizedContainerService.HintSize="797,572" sap2010:WorkflowViewState.IdRef="If_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -134,7 +133,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:LogMessage DisplayName="Log Message 'Date Folder Not Found'" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[StrDateFolderPath + &quot; not found&quot;]" />
-                  <Throw Exception="[New BusinessRuleException(&quot;Date Folder Path not exist&quot; + StrDateFolderPath)]" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                  <Throw DisplayName="Throw Business Rule Exception" Exception="[New BusinessRuleException(&quot;Date Folder Path not exist&quot; + StrDateFolderPath)]" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Throw_1" />
                 </Sequence>
               </If.Then>
               <If.Else>
@@ -152,7 +151,7 @@
                       <InArgument x:TypeArguments="x:String">[StrDateFolderPath]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;DateFolderPath is :&quot; + Out_StrDateFolderPath]" />
+                  <ui:LogMessage DisplayName="Log Date Filder Path" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;DateFolderPath is :&quot; + Out_StrDateFolderPath]" />
                   <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Date Folder is created and Validation is completed&quot;]" />
                 </Sequence>
               </If.Else>
@@ -166,8 +165,8 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[In_Config(&quot;AttachmentSavingFolderPath&quot;).ToString + &quot; Path not found&quot;]" />
-            <Throw Exception="[New BusinessRuleException(&quot;Attachments Saving Folder Path not found &quot;)]" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Throw_2" />
+            <ui:LogMessage DisplayName="Log - Attahcment Folder not Found" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[In_Config(&quot;AttachmentSavingFolderPath&quot;).ToString + &quot; Path not found&quot;]" />
+            <Throw DisplayName="Throw Business Rule Exception" Exception="[New BusinessRuleException(&quot;Attachments Saving Folder Path not found &quot;)]" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Throw_2" />
           </Sequence>
         </If.Else>
       </If>
