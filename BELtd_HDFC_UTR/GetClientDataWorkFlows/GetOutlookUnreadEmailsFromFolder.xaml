@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1240,1278</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1240,1699</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ReadOutlookUnreadEmailsFromFolder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="58">
@@ -82,7 +82,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Get Outlook Emails " sap:VirtualizedContainerService.HintSize="476,1213" sap2010:WorkflowViewState.IdRef="Sequence_3">
+  <Sequence DisplayName="Get Outlook Emails " sap:VirtualizedContainerService.HintSize="498,1634" sap2010:WorkflowViewState.IdRef="Sequence_3">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="Bool_ReadMailsSuccess" />
     </Sequence.Variables>
@@ -91,11 +91,11 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Program start Info Logging" sap:VirtualizedContainerService.HintSize="434,91" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Reading Unread Outlook Emails Program Execution Started&quot;]" />
-    <ui:LogMessage DisplayName="Logging Emails Folder Info" sap:VirtualizedContainerService.HintSize="434,91" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[In_EmailsFolder]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,497" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <ui:LogMessage DisplayName="Program start Info Logging" sap:VirtualizedContainerService.HintSize="456,91" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Reading Unread Outlook Emails Program Execution Started&quot;]" />
+    <ui:LogMessage DisplayName="Logging Emails Folder Info" sap:VirtualizedContainerService.HintSize="456,91" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[In_EmailsFolder]" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="456,918" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <ui:RetryScope DisplayName="Retry Reading Outlook Mails" sap:VirtualizedContainerService.HintSize="418,51" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[In_IntRetryCount]">
+        <ui:RetryScope DisplayName="Retry Reading Outlook Mails" sap:VirtualizedContainerService.HintSize="418,691" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[In_IntRetryCount]">
           <ui:RetryScope.ActivityBody>
             <ActivityAction>
               <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="376,445" sap2010:WorkflowViewState.IdRef="Sequence_4">
@@ -133,17 +133,17 @@
           </ui:RetryScope.Condition>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </ui:RetryScope>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,335" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="422,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -180,7 +180,7 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <Assign DisplayName="Get Count of Unread mails" sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+    <Assign DisplayName="Get Count of Unread mails" sap:VirtualizedContainerService.HintSize="456,60" sap2010:WorkflowViewState.IdRef="Assign_3">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Int32">[Out_UnreadEmailsCount]</OutArgument>
       </Assign.To>
