@@ -2,13 +2,14 @@
   <x:Members>
     <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="in_StrDateFolderPath" Type="InArgument(x:String)" />
-    <x:Property Name="in_StrSummaryReportFilePath" Type="InArgument(x:String)" />
     <x:Property Name="in_StrUnprotectedPDFsDateFolderPath" Type="InArgument(x:String)" />
+    <x:Property Name="in_StrSummaryReportCreationFilePath" Type="InArgument(x:String)" />
+    <x:Property Name="out_StrSummaryReportSavingFilePath" Type="OutArgument(x:String)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>411,673</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1240,773</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GetTransactionData_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="29">
@@ -79,7 +80,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Get Clients Data" sap:VirtualizedContainerService.HintSize="421,608" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Get Clients Data" sap:VirtualizedContainerService.HintSize="421,708" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="StrDateFolderPath" />
       <Variable x:TypeArguments="x:Int32" Name="IntUnreadEmailsCount" />
@@ -119,34 +120,24 @@
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Password removal and summary report update" sap:VirtualizedContainerService.HintSize="379,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="GetClientDataWorkFlows\PasswordRemovalForPDFsAndUpdateSummaryReport.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="scg:Dictionary(x:String, scg:List(x:String))" x:Key="in_DictAttachmentInfo">
-          <mva:VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, scg:List(x:String))" ExpressionText="DictAttachmentsInfo" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_PasswordRemovedAttachmentsPath">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_StrUnprotectedPDFsDateFolderPath" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_HDFCUTR_PaymentDoc_RegEx_WithText">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;HDFCUTR_PaymentDoc_RegEx_WithText&quot;).ToString" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_HDFCUTR_PaymentDoc_RegEx_WithoutText">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;HDFCUTR_PaymentDoc_RegEx_WithoutText&quot;).ToString" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_HDFCUTR_Amount_RegEx_WithText">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;HDFCUTR_Amount_RegEx_WithText&quot;).ToString" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_HDFCUTR_Amount_RegEx_WithoutText">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;HDFCUTR_Amount_RegEx_WithoutText&quot;).ToString" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_StrDateFolderPath">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="StrDateFolderPath" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_StrSummaryReportSavingPath">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;SummaryReportFileSavingPath&quot;).ToString + System.DateTime.Now.ToString(in_Config(&quot;DateFormat&quot;).ToString) + &quot;.xlsx&quot;" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_StrSummaryReportCreationPath">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_StrSummaryReportFilePath" />
-        </InArgument>
+        <InArgument x:TypeArguments="scg:Dictionary(x:String, scg:List(x:String))" x:Key="in_DictAttachmentInfo">[DictAttachmentsInfo]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_PasswordRemovedAttachmentsPath">[in_StrUnprotectedPDFsDateFolderPath]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_HDFCUTR_PaymentDoc_RegEx_WithText">[in_Config("HDFCUTR_PaymentDoc_RegEx_WithText").ToString]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_HDFCUTR_PaymentDoc_RegEx_WithoutText">[in_Config("HDFCUTR_PaymentDoc_RegEx_WithoutText").ToString]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_HDFCUTR_Amount_RegEx_WithText">[in_Config("HDFCUTR_Amount_RegEx_WithText").ToString]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_HDFCUTR_Amount_RegEx_WithoutText">[in_Config("HDFCUTR_Amount_RegEx_WithoutText").ToString]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_StrDateFolderPath">[StrDateFolderPath]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_StrSummaryReportSavingPath">[in_Config("SummaryReportFileSavingPath").ToString + System.DateTime.Now.ToString(in_Config("DateFormat").ToString) + ".xlsx"]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_StrSummaryReportCreationPath">[in_StrSummaryReportCreationFilePath]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
+    <Assign sap:VirtualizedContainerService.HintSize="379,60" sap2010:WorkflowViewState.IdRef="Assign_11">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[out_StrSummaryReportSavingFilePath]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[in_Config("SummaryReportFileSavingPath").ToString + System.DateTime.Now.ToString(in_Config("DateFormat").ToString) + ".xlsx"]</InArgument>
+      </Assign.Value>
+    </Assign>
   </Sequence>
 </Activity>

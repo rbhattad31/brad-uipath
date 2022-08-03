@@ -2,17 +2,18 @@
   <x:Members>
     <x:Property Name="in_PaymentReferanceNumber" Type="InArgument(x:String)" />
     <x:Property Name="in_TransactionNumber" Type="InArgument(x:Int32)" />
-    <x:Property Name="in_PreviousPDFFilePath" Type="InArgument(x:String)" />
-    <x:Property Name="in_CurrentPDFPath" Type="InArgument(x:String)" />
     <x:Property Name="in_SheetName" Type="InArgument(x:String)" />
     <x:Property Name="in_MasterSheetName" Type="InArgument(x:String)" />
     <x:Property Name="in_MasterFile" Type="InArgument(x:String)" />
     <x:Property Name="in_SummaryReportPath" Type="InArgument(x:String)" />
+    <x:Property Name="in_PasswordRemovedPDFPath" Type="InArgument(x:String)" />
+    <x:Property Name="in_ValidatedPDFPath" Type="InArgument(x:String)" />
+    <x:Property Name="in_RenamedPDFPath" Type="InArgument(x:String)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1240,2030</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1240,2522</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ValidatingPaymentReferenceNumberWithMasterFile_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="62">
@@ -48,6 +49,8 @@
       <x:String>System.Activities.DynamicUpdate</x:String>
       <x:String>UiPath.DataTableUtilities</x:String>
       <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -82,17 +85,23 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ValidatingPaymentReferenceNumberWithMasterFile" sap:VirtualizedContainerService.HintSize="942,1965" sap2010:WorkflowViewState.IdRef="Sequence_8">
+  <Sequence DisplayName="ValidatingPaymentReferenceNumberWithMasterFile" sap:VirtualizedContainerService.HintSize="1103,2457" sap2010:WorkflowViewState.IdRef="Sequence_8">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="900,1873" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1061,2365" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="ValidatingPaymentReferenceNumberWithMasterFile" sap:VirtualizedContainerService.HintSize="862,1646" sap2010:WorkflowViewState.IdRef="Sequence_1">
+        <Sequence DisplayName="ValidatingPaymentReferenceNumberWithMasterFile" sap:VirtualizedContainerService.HintSize="1023,2138" sap2010:WorkflowViewState.IdRef="Sequence_1">
           <Sequence.Variables>
             <Variable x:TypeArguments="sd:DataTable" Name="dtMasterData" />
             <Variable x:TypeArguments="sd:DataTable" Name="dtSummaryData" />
@@ -104,16 +113,16 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message Validating Payment Reference Number With Master File Xaml Started" sap:VirtualizedContainerService.HintSize="820,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;ValidatingPaymentReferenceNumberWithMasterFile Xmal Execution Started&quot;]" />
-          <ui:LogMessage DisplayName="Log Message DocumentNumber" sap:VirtualizedContainerService.HintSize="820,91" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;SummaryReport PaymentReferanceNUmber :: &quot;+in_PaymentReferanceNumber]" />
-          <ui:ReadRange AddHeaders="True" DataTable="[dtMasterData]" DisplayName="Reading MasterFile" sap:VirtualizedContainerService.HintSize="820,87" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="[in_MasterSheetName]" WorkbookPath="[in_MasterFile]">
+          <ui:LogMessage DisplayName="Log Message Validating Payment Reference Number With Master File Xaml Started" sap:VirtualizedContainerService.HintSize="981,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;ValidatingPaymentReferenceNumberWithMasterFile Xmal Execution Started&quot;]" />
+          <ui:LogMessage DisplayName="Log Message DocumentNumber" sap:VirtualizedContainerService.HintSize="981,91" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;SummaryReport PaymentReferanceNUmber :: &quot;+in_PaymentReferanceNumber]" />
+          <ui:ReadRange AddHeaders="True" DataTable="[dtMasterData]" DisplayName="Reading MasterFile" sap:VirtualizedContainerService.HintSize="981,87" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="[in_MasterSheetName]" WorkbookPath="[in_MasterFile]">
             <ui:ReadRange.Range>
               <InArgument x:TypeArguments="x:String">
                 <Literal x:TypeArguments="x:String" Value="" />
               </InArgument>
             </ui:ReadRange.Range>
           </ui:ReadRange>
-          <Assign sap:VirtualizedContainerService.HintSize="820,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+          <Assign sap:VirtualizedContainerService.HintSize="981,60" sap2010:WorkflowViewState.IdRef="Assign_2">
             <Assign.To>
               <OutArgument x:TypeArguments="scg:List(sd:DataRow)">[strMasterFileCount]</OutArgument>
             </Assign.To>
@@ -121,23 +130,42 @@
               <InArgument x:TypeArguments="scg:List(sd:DataRow)">[(From d1 In dtMasterData.AsEnumerable Where d1(1).ToString=in_PaymentReferanceNumber.ToString.Trim Select d1).ToList]</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="820,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[strMasterFileCount.Count]" />
-          <If Condition="[strMasterFileCount.Count&gt;=1]" sap:VirtualizedContainerService.HintSize="820,803" sap2010:WorkflowViewState.IdRef="If_2">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="981,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[strMasterFileCount.Count]" />
+          <If Condition="[strMasterFileCount.Count&gt;=1]" sap:VirtualizedContainerService.HintSize="981,1295" sap2010:WorkflowViewState.IdRef="If_2">
             <If.Then>
-              <Sequence sap:VirtualizedContainerService.HintSize="399,645" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <Sequence sap:VirtualizedContainerService.HintSize="560,1137" sap2010:WorkflowViewState.IdRef="Sequence_6">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:LogMessage DisplayName="Log Message For Paament Reference Number Found" sap:VirtualizedContainerService.HintSize="357,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;PaymentReferanceNumber found in Master File&quot;]" />
-                <ui:WriteCell Cell="[&quot;F&quot;+(in_TransactionNumber+1).ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="357,115" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="[in_SheetName]" Text="Validation Success" WorkbookPath="[in_SummaryReportPath]" />
-                <ui:WriteCell Cell="[&quot;G&quot;+(in_TransactionNumber+1).ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="357,115" sap2010:WorkflowViewState.IdRef="WriteCell_4" SheetName="[in_SheetName]" Text="[in_PaymentReferanceNumber]" WorkbookPath="[in_SummaryReportPath]" />
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="357,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ProcessWorkFlows\RenameAndMoveFiles.xaml">
-                  <ui:InvokeWorkflowFile.Arguments>
-                    <scg:Dictionary x:TypeArguments="x:String, Argument" />
-                  </ui:InvokeWorkflowFile.Arguments>
-                </ui:InvokeWorkflowFile>
+                <ui:LogMessage DisplayName="Log Message For Paament Reference Number Found" sap:VirtualizedContainerService.HintSize="518,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;PaymentReferanceNumber found in Master File&quot;]" />
+                <ui:WriteCell Cell="[&quot;F&quot;+(in_TransactionNumber+1).ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="518,115" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="[in_SheetName]" Text="Validation Success" WorkbookPath="[in_SummaryReportPath]" />
+                <ui:WriteCell Cell="[&quot;G&quot;+(in_TransactionNumber+1).ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="518,115" sap2010:WorkflowViewState.IdRef="WriteCell_4" SheetName="[in_SheetName]" Text="[in_PaymentReferanceNumber]" WorkbookPath="[in_SummaryReportPath]" />
+                <ui:RenameFileX DisplayName="Rename File in Password Removed Folder to Payment Reference number" FilePath="[in_PasswordRemovedPDFPath]" sap:VirtualizedContainerService.HintSize="518,141" sap2010:WorkflowViewState.IdRef="RenameFileX_1" KeepExtension="True" NewName="[in_RenamedPDFPath]" />
+                <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="518,423" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="3">
+                  <ui:RetryScope.ActivityBody>
+                    <ActivityAction>
+                      <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="476,249" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[in_ValidatedPDFPath]" DisplayName="Move File to Validate Folder" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="MoveFile_2" Overwrite="True" Path="[in_RenamedPDFPath + &quot;.pdf&quot;]" />
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:RetryScope.ActivityBody>
+                  <ui:RetryScope.Condition>
+                    <ActivityFunc x:TypeArguments="x:Boolean" />
+                  </ui:RetryScope.Condition>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:RetryScope>
               </Sequence>
             </If.Then>
             <If.Else>
@@ -160,11 +188,11 @@
               </Sequence>
             </If.Else>
           </If>
-          <ui:LogMessage DisplayName="Log Message Validating Payment Reference Number With Master File Xaml Ended" sap:VirtualizedContainerService.HintSize="820,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;ValidatingPaymentReferenceNumberWithMasterFile Xmal Execution Ended&quot;]" />
+          <ui:LogMessage DisplayName="Log Message Validating Payment Reference Number With Master File Xaml Ended" sap:VirtualizedContainerService.HintSize="897,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;ValidatingPaymentReferenceNumberWithMasterFile Xmal Execution Ended&quot;]" />
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="843,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="943,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
