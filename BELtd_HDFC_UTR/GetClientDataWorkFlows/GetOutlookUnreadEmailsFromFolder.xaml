@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1240,1699</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1240,1790</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ReadOutlookUnreadEmailsFromFolder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="58">
@@ -79,10 +79,9 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Get Outlook Emails " sap:VirtualizedContainerService.HintSize="498,1634" sap2010:WorkflowViewState.IdRef="Sequence_3">
+  <Sequence DisplayName="Get Outlook Emails " sap:VirtualizedContainerService.HintSize="498,1725" sap2010:WorkflowViewState.IdRef="Sequence_3">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="Bool_ReadMailsSuccess" />
     </Sequence.Variables>
@@ -93,12 +92,12 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Program start Info Logging" sap:VirtualizedContainerService.HintSize="456,91" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Reading Unread Outlook Emails Program Execution Started&quot;]" />
     <ui:LogMessage DisplayName="Logging Emails Folder Info" sap:VirtualizedContainerService.HintSize="456,91" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[In_EmailsFolder]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="456,918" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="456,1009" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <ui:RetryScope DisplayName="Retry Reading Outlook Mails" sap:VirtualizedContainerService.HintSize="418,691" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[In_IntRetryCount]">
+        <ui:RetryScope DisplayName="Retry Reading Outlook Mails" sap:VirtualizedContainerService.HintSize="418,782" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[In_IntRetryCount]">
           <ui:RetryScope.ActivityBody>
             <ActivityAction>
-              <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="376,445" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="376,536" sap2010:WorkflowViewState.IdRef="Sequence_4">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -114,7 +113,25 @@
                   </Assign.Value>
                 </Assign>
                 <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Get Outlook Mail Messages&quot;]" />
-                <ui:GetOutlookMailMessages Account="{x:Null}" Filter="{x:Null}" FilterByMessageIds="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Get Outlook Mail Messages" GetAttachements="False" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="GetOutlookMailMessages_1" MailFolder="[In_EmailsFolder]" MarkAsRead="False" Messages="[Out_ListMailMessages]" OnlyUnreadMessages="True" OrderByDate="NewestFirst" Top="10000" />
+                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                  <ui:CommentOut.Body>
+                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="242,114" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:GetOutlookMailMessages Account="{x:Null}" Filter="{x:Null}" FilterByMessageIds="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Get Outlook Mail Messages" GetAttachements="False" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="GetOutlookMailMessages_1" MailFolder="[In_EmailsFolder]" MarkAsRead="True" Messages="[Out_ListMailMessages]" OnlyUnreadMessages="True" OrderByDate="NewestFirst" Top="10000" />
+                    </Sequence>
+                  </ui:CommentOut.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:CommentOut>
+                <ui:GetOutlookMailMessages Account="{x:Null}" FilterByMessageIds="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Get Outlook Mail Messages" Filter="[From]=Enetadvicemailing@hdfcbank.net Or [Subject]= Vendor_Payments_18.07.2022" GetAttachements="False" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="GetOutlookMailMessages_2" MailFolder="[In_EmailsFolder]" MarkAsRead="True" Messages="[Out_ListMailMessages]" OnlyUnreadMessages="True" OrderByDate="NewestFirst" Top="10000" />
                 <Assign DisplayName="Assign ReadMailsSuccess as True if Outlook read mails" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_2">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:Boolean">[Bool_ReadMailsSuccess]</OutArgument>
@@ -188,7 +205,7 @@
         <InArgument x:TypeArguments="x:Int32">[Out_ListMailMessages.Count]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:LogMessage DisplayName="Log Unread Emails Count Info" sap:VirtualizedContainerService.HintSize="434,91" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Unread Emails Count: &quot; + Out_UnreadEmailsCount.ToString]" />
+    <ui:LogMessage DisplayName="Log Unread Emails Count Info" sap:VirtualizedContainerService.HintSize="456,91" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Unread Emails Count: &quot; + Out_UnreadEmailsCount.ToString]" />
     <ui:LogMessage DisplayName="Program end Info Logging" sap:VirtualizedContainerService.HintSize="434,91" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Reading Unread Outlook Emails Program Execution completed&quot;]" />
   </Sequence>
 </Activity>
