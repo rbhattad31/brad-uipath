@@ -180,6 +180,20 @@
           "lib/net46/MailKit.dll": {}
         }
       },
+      "Microsoft.Activities/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Activities.Design.Services.dll": {},
+          "lib/net45/Microsoft.Activities.Design.dll": {},
+          "lib/net45/Microsoft.Activities.dll": {},
+          "lib/net45/Microsoft.Workflow.Client.dll": {},
+          "lib/net45/Microsoft.Workflow.Common.dll": {},
+          "lib/net45/Microsoft.Workflow.Tracing.dll": {}
+        }
+      },
       "Microsoft.AspNet.SignalR.Client/2.4.0": {
         "type": "package",
         "dependencies": {
@@ -1386,7 +1400,7 @@
           "build/_._": {}
         }
       },
-      "UiPath.Activities.RuntimeGovernance/1.1.3": {
+      "UiPath.Activities.RuntimeGovernance/1.1.6": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "11.0.2"
@@ -1429,7 +1443,7 @@
           "lib/net461/UiPath.DocumentProcessing.Contracts.dll": {}
         }
       },
-      "UiPath.DocumentUnderstanding.Digitizer/2.1.1-preview": {
+      "UiPath.DocumentUnderstanding.Digitizer/2.3.0-preview": {
         "type": "package",
         "dependencies": {
           "BitMiracle.Docotic.Pdf": "7.5.11645",
@@ -1582,7 +1596,7 @@
           "lib/net461/UiPath.ImageProcessingInterop.dll": {}
         }
       },
-      "UiPath.Mail.Activities/1.15.2": {
+      "UiPath.Mail.Activities/1.16.0-preview": {
         "type": "package",
         "dependencies": {
           "Google.Apis.Calendar.v3": "1.55.0.2554",
@@ -1596,7 +1610,7 @@
           "Newtonsoft.Json": "13.0.1",
           "System.IdentityModel.Tokens.Jwt": "6.12.2",
           "System.ValueTuple": "4.5.0",
-          "UiPath.Activities.RuntimeGovernance": "1.1.3",
+          "UiPath.Activities.RuntimeGovernance": "1.1.6",
           "UiPath.ConnectionClient": "1.3.0",
           "UiPath.Platform": "22.4.0",
           "UiPath.Telemetry.Client": "1.5.3"
@@ -1610,7 +1624,6 @@
           "lib/net461/Microsoft.Office.Interop.Word.dll": {},
           "lib/net461/Office.dll": {},
           "lib/net461/UiPath.Mail.Activities.Design.dll": {},
-          "lib/net461/UiPath.Mail.Activities.Package.dll": {},
           "lib/net461/UiPath.Mail.Activities.dll": {},
           "lib/net461/UiPath.Mail.dll": {},
           "lib/net461/UiPath.MainSessionServer.Shared.dll": {}
@@ -1818,15 +1831,14 @@
           "lib/net461/UiPath.OCR.Contracts.dll": {}
         }
       },
-      "UiPath.PDF.Activities/3.7.1-preview": {
+      "UiPath.PDF.Activities/3.8.0-preview": {
         "type": "package",
         "dependencies": {
-          "BitMiracle.Docotic.Pdf": "7.5.11645",
           "Newtonsoft.Json": "11.0.2",
           "System.IO.Abstractions": "3.0.10",
           "System.Threading.Tasks.Dataflow": "5.0.0",
           "System.ValueTuple": "4.5.0",
-          "UiPath.DocumentUnderstanding.Digitizer": "2.1.1-preview",
+          "UiPath.DocumentUnderstanding.Digitizer": "2.3.0-preview",
           "UiPath.OCR.Contracts": "2.12.0-preview",
           "UiPath.Telemetry.Client": "1.5.3"
         },
@@ -2747,6 +2759,20 @@
         },
         "runtime": {
           "lib/net46/MailKit.dll": {}
+        }
+      },
+      "Microsoft.Activities/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Activities.Design.Services.dll": {},
+          "lib/net45/Microsoft.Activities.Design.dll": {},
+          "lib/net45/Microsoft.Activities.dll": {},
+          "lib/net45/Microsoft.Workflow.Client.dll": {},
+          "lib/net45/Microsoft.Workflow.Common.dll": {},
+          "lib/net45/Microsoft.Workflow.Tracing.dll": {}
         }
       },
       "Microsoft.AspNet.SignalR.Client/2.4.0": {
@@ -3940,7 +3966,7 @@
           "build/_._": {}
         }
       },
-      "UiPath.Activities.RuntimeGovernance/1.1.3": {
+      "UiPath.Activities.RuntimeGovernance/1.1.6": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "11.0.2"
@@ -3983,7 +4009,7 @@
           "lib/net461/UiPath.DocumentProcessing.Contracts.dll": {}
         }
       },
-      "UiPath.DocumentUnderstanding.Digitizer/2.1.1-preview": {
+      "UiPath.DocumentUnderstanding.Digitizer/2.3.0-preview": {
         "type": "package",
         "dependencies": {
           "BitMiracle.Docotic.Pdf": "7.5.11645",
@@ -4136,7 +4162,7 @@
           "lib/net461/UiPath.ImageProcessingInterop.dll": {}
         }
       },
-      "UiPath.Mail.Activities/1.15.2": {
+      "UiPath.Mail.Activities/1.16.0-preview": {
         "type": "package",
         "dependencies": {
           "Google.Apis.Calendar.v3": "1.55.0.2554",
@@ -4150,7 +4176,7 @@
           "Newtonsoft.Json": "13.0.1",
           "System.IdentityModel.Tokens.Jwt": "6.12.2",
           "System.ValueTuple": "4.5.0",
-          "UiPath.Activities.RuntimeGovernance": "1.1.3",
+          "UiPath.Activities.RuntimeGovernance": "1.1.6",
           "UiPath.ConnectionClient": "1.3.0",
           "UiPath.Platform": "22.4.0",
           "UiPath.Telemetry.Client": "1.5.3"
@@ -4164,7 +4190,6 @@
           "lib/net461/Microsoft.Office.Interop.Word.dll": {},
           "lib/net461/Office.dll": {},
           "lib/net461/UiPath.Mail.Activities.Design.dll": {},
-          "lib/net461/UiPath.Mail.Activities.Package.dll": {},
           "lib/net461/UiPath.Mail.Activities.dll": {},
           "lib/net461/UiPath.Mail.dll": {},
           "lib/net461/UiPath.MainSessionServer.Shared.dll": {}
@@ -4372,15 +4397,14 @@
           "lib/net461/UiPath.OCR.Contracts.dll": {}
         }
       },
-      "UiPath.PDF.Activities/3.7.1-preview": {
+      "UiPath.PDF.Activities/3.8.0-preview": {
         "type": "package",
         "dependencies": {
-          "BitMiracle.Docotic.Pdf": "7.5.11645",
           "Newtonsoft.Json": "11.0.2",
           "System.IO.Abstractions": "3.0.10",
           "System.Threading.Tasks.Dataflow": "5.0.0",
           "System.ValueTuple": "4.5.0",
-          "UiPath.DocumentUnderstanding.Digitizer": "2.1.1-preview",
+          "UiPath.DocumentUnderstanding.Digitizer": "2.3.0-preview",
           "UiPath.OCR.Contracts": "2.12.0-preview",
           "UiPath.Telemetry.Client": "1.5.3"
         },
@@ -5169,6 +5193,7 @@
       "path": "bitmiracle.libtiff.net/2.4.649",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "bitmiracle.libtiff.net.2.4.649.nupkg.sha512",
         "bitmiracle.libtiff.net.nuspec",
         "lib/net40/BitMiracle.LibTiff.NET.dll",
@@ -5283,6 +5308,7 @@
       "path": "google.apis.calendar.v3/1.55.0.2554",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
         "google.apis.calendar.v3.1.55.0.2554.nupkg.sha512",
@@ -5463,6 +5489,25 @@
         "lib/netstandard2.1/MailKit.xml",
         "mailkit.3.1.1.nupkg.sha512",
         "mailkit.nuspec"
+      ]
+    },
+    "Microsoft.Activities/1.0.1": {
+      "sha512": "jkwJR/MMdyLol9wkIXkbpcCu8AUAJte7UZM6IcoeOnrX8cNgHppt6IawNfkhGqQs6ulTklBuZ2DjLj1/154iUA==",
+      "type": "package",
+      "path": "microsoft.activities/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net45/Microsoft.Activities.Design.Services.dll",
+        "lib/net45/Microsoft.Activities.Design.dll",
+        "lib/net45/Microsoft.Activities.Design.xml",
+        "lib/net45/Microsoft.Activities.dll",
+        "lib/net45/Microsoft.Activities.xml",
+        "lib/net45/Microsoft.Workflow.Client.dll",
+        "lib/net45/Microsoft.Workflow.Client.xml",
+        "lib/net45/Microsoft.Workflow.Common.dll",
+        "lib/net45/Microsoft.Workflow.Tracing.dll",
+        "microsoft.activities.1.0.1.nupkg.sha512",
+        "microsoft.activities.nuspec"
       ]
     },
     "Microsoft.AspNet.SignalR.Client/2.4.0": {
@@ -6797,7 +6842,6 @@
       "path": "nlog/4.5.11",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "lib/monoandroid44/NLog.dll",
         "lib/monoandroid44/NLog.xml",
         "lib/net35/NLog.dll",
@@ -6877,6 +6921,7 @@
       "path": "ntextcat/0.3.65",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "README.txt",
         "content/Core14.profile.xml",
         "lib/netstandard2.0/NTextCat.dll",
@@ -7129,6 +7174,7 @@
       "path": "system.drawing.primitives/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -7800,17 +7846,17 @@
         "uipath.nuspec"
       ]
     },
-    "UiPath.Activities.RuntimeGovernance/1.1.3": {
-      "sha512": "grF+nXXiCuzaSIBT3z/W6o7QMW7B/qHxUAFYeFpOohcwuh1GLLbuZ0jbyVHIwsj5FaQIv5nMd5JUbWjPlHLCQQ==",
+    "UiPath.Activities.RuntimeGovernance/1.1.6": {
+      "sha512": "y9q2bavqIkAngr1sTX6YYmenmq5aCqjRgNEDxy5UuVZOP0pFnGNmaxRtYqSPJLBVBFzyxPa4B1Ox0c23ueta7w==",
       "type": "package",
-      "path": "uipath.activities.runtimegovernance/1.1.3",
+      "path": "uipath.activities.runtimegovernance/1.1.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net461/UiPath.Activities.RuntimeGovernance.dll",
         "lib/net5.0-windows7.0/UiPath.Activities.RuntimeGovernance.dll",
         "lib/net5.0/UiPath.Activities.RuntimeGovernance.dll",
-        "uipath.activities.runtimegovernance.1.1.3.nupkg.sha512",
+        "uipath.activities.runtimegovernance.1.1.6.nupkg.sha512",
         "uipath.activities.runtimegovernance.nuspec"
       ]
     },
@@ -7843,16 +7889,16 @@
         "uipath.documentprocessing.contracts.nuspec"
       ]
     },
-    "UiPath.DocumentUnderstanding.Digitizer/2.1.1-preview": {
-      "sha512": "rQdIHmSEtbNHLp8jzrDWBmx6rJMQPaxV4XX7m5ITd4z6ttPgqxNeQrmOPguWop8GPd6zL9Z1nQVBf2+d/PhSng==",
+    "UiPath.DocumentUnderstanding.Digitizer/2.3.0-preview": {
+      "sha512": "tAkZDLNrGfP9O+0jyk1I/kjKe2tH8aKzL0sQTcNGg6ieqZJiVhL4/SndZziaZW4ee8tfngWsiQN0MTTkHyzDPA==",
       "type": "package",
-      "path": "uipath.documentunderstanding.digitizer/2.1.1-preview",
+      "path": "uipath.documentunderstanding.digitizer/2.3.0-preview",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net461/UiPath.DocumentUnderstanding.Digitizer.dll",
         "lib/net5.0/UiPath.DocumentUnderstanding.Digitizer.dll",
-        "uipath.documentunderstanding.digitizer.2.1.1-preview.nupkg.sha512",
+        "uipath.documentunderstanding.digitizer.2.3.0-preview.nupkg.sha512",
         "uipath.documentunderstanding.digitizer.nuspec"
       ]
     },
@@ -7997,10 +8043,10 @@
         "uipath.imageprocessing.nuspec"
       ]
     },
-    "UiPath.Mail.Activities/1.15.2": {
-      "sha512": "CdfEiFSMyPF9B8lUMAzoKLzV/002CWDI5Ixm4k0FnQjtegv9G1nVkcTX6NVm4R9SdFJ1/ijXX8tmXri3+nqTxQ==",
+    "UiPath.Mail.Activities/1.16.0-preview": {
+      "sha512": "jluQzAuDw2j9sVkELMJl4thHkmK97Ng6C80mSNPpnJwP26iQGCu2442ENo8c2yT4ZPaKCSodAnnqXNzGqLMEtw==",
       "type": "package",
-      "path": "uipath.mail.activities/1.15.2",
+      "path": "uipath.mail.activities/1.16.0-preview",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -8010,7 +8056,6 @@
         "lib/net461/Microsoft.Office.Interop.Word.dll",
         "lib/net461/Office.dll",
         "lib/net461/UiPath.Mail.Activities.Design.dll",
-        "lib/net461/UiPath.Mail.Activities.Package.dll",
         "lib/net461/UiPath.Mail.Activities.Package.pdb",
         "lib/net461/UiPath.Mail.Activities.dll",
         "lib/net461/UiPath.Mail.dll",
@@ -8053,7 +8098,6 @@
         "lib/net5.0-windows7.0/Microsoft.Office.Interop.Word.dll",
         "lib/net5.0-windows7.0/Office.dll",
         "lib/net5.0-windows7.0/UiPath.Mail.Activities.Design.dll",
-        "lib/net5.0-windows7.0/UiPath.Mail.Activities.Package.dll",
         "lib/net5.0-windows7.0/UiPath.Mail.Activities.Package.pdb",
         "lib/net5.0-windows7.0/UiPath.Mail.Activities.dll",
         "lib/net5.0-windows7.0/UiPath.Mail.dll",
@@ -8091,36 +8135,6 @@
         "lib/net5.0-windows7.0/zh-CN/UiPath.Mail.Activities.Design.resources.dll",
         "lib/net5.0-windows7.0/zh-CN/UiPath.Mail.Activities.resources.dll",
         "lib/net5.0-windows7.0/zh-CN/UiPath.Mail.resources.dll",
-        "lib/net5.0/Interop.Domino.UiPath.dll",
-        "lib/net5.0/Microsoft.Office.Interop.Outlook.dll",
-        "lib/net5.0/Microsoft.Office.Interop.Word.dll",
-        "lib/net5.0/Office.dll",
-        "lib/net5.0/UiPath.Mail.Activities.Package.dll",
-        "lib/net5.0/UiPath.Mail.Activities.Package.pdb",
-        "lib/net5.0/UiPath.Mail.Activities.dll",
-        "lib/net5.0/UiPath.Mail.dll",
-        "lib/net5.0/de/UiPath.Mail.Activities.resources.dll",
-        "lib/net5.0/de/UiPath.Mail.resources.dll",
-        "lib/net5.0/es-MX/UiPath.Mail.Activities.resources.dll",
-        "lib/net5.0/es-MX/UiPath.Mail.resources.dll",
-        "lib/net5.0/es/UiPath.Mail.Activities.resources.dll",
-        "lib/net5.0/es/UiPath.Mail.resources.dll",
-        "lib/net5.0/fr/UiPath.Mail.Activities.resources.dll",
-        "lib/net5.0/fr/UiPath.Mail.resources.dll",
-        "lib/net5.0/ja/UiPath.Mail.Activities.resources.dll",
-        "lib/net5.0/ja/UiPath.Mail.resources.dll",
-        "lib/net5.0/ko/UiPath.Mail.Activities.resources.dll",
-        "lib/net5.0/ko/UiPath.Mail.resources.dll",
-        "lib/net5.0/pt-BR/UiPath.Mail.Activities.resources.dll",
-        "lib/net5.0/pt-BR/UiPath.Mail.resources.dll",
-        "lib/net5.0/pt/UiPath.Mail.Activities.resources.dll",
-        "lib/net5.0/pt/UiPath.Mail.resources.dll",
-        "lib/net5.0/ru/UiPath.Mail.Activities.resources.dll",
-        "lib/net5.0/ru/UiPath.Mail.resources.dll",
-        "lib/net5.0/tr/UiPath.Mail.Activities.resources.dll",
-        "lib/net5.0/tr/UiPath.Mail.resources.dll",
-        "lib/net5.0/zh-CN/UiPath.Mail.Activities.resources.dll",
-        "lib/net5.0/zh-CN/UiPath.Mail.resources.dll",
         "tools/net461/MainSessionServer/Microsoft.Bcl.AsyncInterfaces.dll",
         "tools/net461/MainSessionServer/Microsoft.Extensions.Configuration.Abstractions.dll",
         "tools/net461/MainSessionServer/Microsoft.Extensions.Configuration.Binder.dll",
@@ -8270,7 +8284,7 @@
         "tools/net461/MainSessionServer/UiPath.MainSessionServer.Shared.dll",
         "tools/net461/MainSessionServer/UiPath.MainSessionServer.Shared.pdb",
         "tools/net461/MainSessionServer/netstandard.dll",
-        "uipath.mail.activities.1.15.2.nupkg.sha512",
+        "uipath.mail.activities.1.16.0-preview.nupkg.sha512",
         "uipath.mail.activities.nuspec"
       ]
     },
@@ -8596,10 +8610,10 @@
         "uipath.ocr.contracts.nuspec"
       ]
     },
-    "UiPath.PDF.Activities/3.7.1-preview": {
-      "sha512": "LzvzMtyffMfJCtj+2mUYmxHTKQTf6PCyHnE+lnRptFGnd8XxB5G1d1cmdxjTShZteu50McJ4oRVl5TdGs71Ykg==",
+    "UiPath.PDF.Activities/3.8.0-preview": {
+      "sha512": "oOt1NqcJQj8/xEujNeV/kfXzWlumd/pHJMRu/aiCXVE+Mz3Wt0GFOOXwDOb/qn3BHGHdpndpBfGDH9+5AqO4RQ==",
       "type": "package",
-      "path": "uipath.pdf.activities/3.7.1-preview",
+      "path": "uipath.pdf.activities/3.8.0-preview",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -8702,7 +8716,7 @@
         "lib/net5.0/tr/UiPath.PDF.resources.dll",
         "lib/net5.0/zh-CN/UiPath.PDF.Activities.resources.dll",
         "lib/net5.0/zh-CN/UiPath.PDF.resources.dll",
-        "uipath.pdf.activities.3.7.1-preview.nupkg.sha512",
+        "uipath.pdf.activities.3.8.0-preview.nupkg.sha512",
         "uipath.pdf.activities.nuspec"
       ]
     },
@@ -9467,28 +9481,34 @@
   "projectFileDependencyGroups": {
     "": [],
     ".NETFramework,Version=v4.6.1": [
+      "Microsoft.Activities >= 1.0.1 <= 1.0.1",
       "UiPath.Excel.Activities >= 2.12.3 <= 2.12.3",
-      "UiPath.Mail.Activities >= 1.15.2 <= 1.15.2",
-      "UiPath.PDF.Activities >= 3.7.1-preview <= 3.7.1-preview",
+      "UiPath.Mail.Activities >= 1.16.0-preview <= 1.16.0-preview",
+      "UiPath.PDF.Activities >= 3.8.0-preview <= 3.8.0-preview",
       "UiPath.System.Activities >= 22.4.1 <= 22.4.1",
       "UiPath.Testing.Activities >= 22.4.3 <= 22.4.3",
       "UiPath.UIAutomation.Activities >= 22.4.5 <= 22.4.5"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\naviii\\.nuget\\packages\\": {}
+    "C:\\Users\\BRADSOL\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "BELtd_HDFC_UTR",
       "projectName": "BELtd_HDFC_UTR",
-      "projectPath": "C:\\Users\\naviii\\Documents\\UiPath\\BELtd_HDFC_UTR_3.0\\.local",
-      "packagesPath": "C:\\Users\\naviii\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\naviii\\Documents\\UiPath\\BELtd_HDFC_UTR_3.0\\.local"
+      "projectPath": "C:\\Users\\BRADSOL\\Documents\\UiPath\\BELtd_HDFC_UTR\\.local",
+      "packagesPath": "C:\\Users\\BRADSOL\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\BRADSOL\\Documents\\UiPath\\BELtd_HDFC_UTR\\.local"
     },
     "frameworks": {
       "net461": {
         "dependencies": {
+          "Microsoft.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.0.1, 1.0.1]"
+          },
           "UiPath.Excel.Activities": {
             "include": "Runtime",
             "target": "Package",
@@ -9497,12 +9517,12 @@
           "UiPath.Mail.Activities": {
             "include": "Runtime",
             "target": "Package",
-            "version": "[1.15.2, 1.15.2]"
+            "version": "[1.16.0-preview, 1.16.0-preview]"
           },
           "UiPath.PDF.Activities": {
             "include": "Runtime",
             "target": "Package",
-            "version": "[3.7.1-preview, 3.7.1-preview]"
+            "version": "[3.8.0-preview, 3.8.0-preview]"
           },
           "UiPath.System.Activities": {
             "include": "Runtime",
@@ -9520,7 +9540,7 @@
             "version": "[22.4.5, 22.4.5]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\naviii\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\BRADSOL\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {
