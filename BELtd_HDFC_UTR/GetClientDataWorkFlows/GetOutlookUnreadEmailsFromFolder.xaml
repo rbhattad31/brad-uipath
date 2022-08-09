@@ -136,7 +136,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:CommentOut>
-                <ui:GetOutlookMailMessages Account="{x:Null}" FilterByMessageIds="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Get Outlook Mail Messages" Filter="@SQL=urn:schemas:httpmail:fromname LIKE '%Enetadvicemailing@hdfcbank.net%' OR urn:schemas:httpmail:subject LIKE '%Vendor_Payments%'" GetAttachements="False" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="GetOutlookMailMessages_2" MailFolder="[In_EmailsFolder]" MarkAsRead="False" Messages="[Out_ListMailMessages]" OnlyUnreadMessages="True" OrderByDate="NewestFirst" Top="1000" />
+                <ui:GetOutlookMailMessages Account="{x:Null}" FilterByMessageIds="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Get Outlook Mail Messages" Filter="[&quot;@SQL=urn:schemas:httpmail:fromname LIKE '%&quot; + in_Config(&quot;Mail_Sender_SearchString_HDFC_UTR&quot;).ToString + &quot;%' OR urn:schemas:httpmail:subject LIKE '%&quot; + in_Config(&quot;MailSubjectVendorPaymentsFileName&quot;).ToString+ &quot;%'&quot;]" GetAttachements="False" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="GetOutlookMailMessages_2" MailFolder="[In_EmailsFolder]" MarkAsRead="True" Messages="[Out_ListMailMessages]" OnlyUnreadMessages="True" OrderByDate="NewestFirst" Top="1000" />
                 <Assign DisplayName="Assign ReadMailsSuccess as True if Outlook read mails" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_2">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:Boolean">[Bool_ReadMailsSuccess]</OutArgument>

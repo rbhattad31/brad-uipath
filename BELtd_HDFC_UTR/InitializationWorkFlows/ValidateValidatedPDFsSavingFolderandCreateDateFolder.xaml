@@ -3,7 +3,7 @@
     <x:Property Name="in_Config" Type="InOutArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="Out_StrDateFolderPath" Type="OutArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1240,1305</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>516,1305</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
@@ -237,6 +237,6 @@
         </Sequence>
       </If.Then>
     </If>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,91" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;'Date Folder Creation inside Validated PDFs Saving Folder' Process is started&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,91" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;'Date Folder Creation inside Validated PDFs Saving Folder' Process is Completed&quot;]" />
   </Sequence>
 </Activity>

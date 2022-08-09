@@ -91,7 +91,6 @@
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence sap:VirtualizedContainerService.HintSize="463,1552" sap2010:WorkflowViewState.IdRef="Sequence_39">
@@ -152,8 +151,8 @@
           <InArgument x:TypeArguments="x:String">[in_StrUnprotectedPDFsDateFolderPath + "\" + in_TransactionItem(2).ToString]</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="379,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[strPasswordRemovedPDFFilePath]" />
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="379,91" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[strRenamedPDFFilePath]" />
+      <ui:LogMessage DisplayName="Log Message - Password removed pdf file path" sap:VirtualizedContainerService.HintSize="379,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[strPasswordRemovedPDFFilePath]" />
+      <ui:LogMessage DisplayName="Log Message - File renamed pdf file path" sap:VirtualizedContainerService.HintSize="379,91" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[strRenamedPDFFilePath]" />
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke ValidatingPaymentReferenceNumberWithMasterFile workflow" sap:VirtualizedContainerService.HintSize="379,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="ProcessWorkFlows\ValidatingPaymentReferenceNumberWithMasterFile.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <InArgument x:TypeArguments="x:String" x:Key="in_PaymentReferanceNumber">[in_TransactionItem(2).ToString]</InArgument>
