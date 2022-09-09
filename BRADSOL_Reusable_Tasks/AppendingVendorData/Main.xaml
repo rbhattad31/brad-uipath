@@ -72,7 +72,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="35">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="70">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -108,6 +108,7 @@
       <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="AppendingVendorData" sap:VirtualizedContainerService.HintSize="4278.4,9207.2" sap2010:WorkflowViewState.IdRef="Sequence_29">
@@ -186,7 +187,7 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <If Condition="[CurrentRow(&quot;Process Date&quot;).ToString.Contains(strCurrentDateTime)]" DisplayName="If 'Checking MasterFile Date is Today Date Or Not'" sap:VirtualizedContainerService.HintSize="4044.8,8144.8" sap2010:WorkflowViewState.IdRef="If_6">
+                      <If Condition="[CurrentRow(&quot;Processed Date&quot;).ToString.Contains(strCurrentDateTime)]" DisplayName="If 'Checking MasterFile Date is Today Date Or Not'" sap:VirtualizedContainerService.HintSize="4044.8,8144.8" sap2010:WorkflowViewState.IdRef="If_6">
                         <If.Then>
                           <Sequence DisplayName="CurrentDate Exist" sap:VirtualizedContainerService.HintSize="375.2,185.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
                             <sap:WorkflowViewStateService.ViewState>
