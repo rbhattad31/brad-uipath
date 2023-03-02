@@ -1,0 +1,119 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="CloseAllApplications" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="603,1117" sap2010:WorkflowViewState.IdRef="CloseAllApplications_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="50">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Do the necessary procedures for ending the process (e.g., logout) and close the used applications." DisplayName="Close All Applications" sap:VirtualizedContainerService.HintSize="546,1052" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log message (close applications)" sap:VirtualizedContainerService.HintSize="484,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Closing applications...&quot;]" />
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Login and Logout Procurement Anywhere\Close and Logout Procurement Anywhere.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="484,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Login and Logout Procurement Anywhere\Close and Logout Procurement Anywhere.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Automation Anywhere Labs - Supply Chain Management" sap:VirtualizedContainerService.HintSize="484,614" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="6d41b817-11c1-46bc-90a8-2d3744dcd42c" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,397" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:10" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="388,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Ready to Submit&quot;]" />
+            <uix:NClick ClickType="Single" DelayAfter="2" DelayBefore="2" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6d41b817-11c1-46bc-90a8-2d3744dcd42c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-supplychainmanagement.html?utm_source=challenge_page_success&amp;utm_medium=Developer%20Advocacy&amp;utm_campaign=supply_chain" DesignTimeRectangle="143, 636, 140, 36" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl id='submitbutton' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='submitbutton' tag='BUTTON' type='button' class='btn btn-info' aaname='Submit' check:innerText='Submit' /&gt;" Guid="5b0e547b-42ee-47e2-a509-b9a4a1231b2b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJAAAAAoCAYAAAAR33OgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIeSURBVHhe7ZzBagIxFEX7R133A7spCP0Sf6DgttilH1B06cKFLkRwkSYzucmbyVNn3iAaeg8cKGkiQk6TqQtfHCETYEBkEp2A3r9+3dvnj3v9+Ka0MLQRGpGkgMIvtEWU9pURpYB48tChhlZACkibSOklAQOiJgEDoiYBA6ImAQOiJgEDoiYBA6ImAQOiJkHlAW1d94P1s1sutHk3XOzdYcr6W156/TB+2ruZnFuJoOKA+vEAQwSPCGh1bEYcA3qMs805vvOjmzdja7c8xaHdtph/1XsHpMmAHmsKSG5AsSn5lPpdXVkrA1rh5xZ1nQ80B+yJwWpjjb1AO/Mih806z69AUO8VhlgicqOzYwPSwVpt48HhdCUKBvScznfxzUs615choLReXIlxXt54XHVijjaG1+oF1IzxCnsStdMjbYrhCsMGB9Mp1z5nFetujTGgupQnUhvM2IDwQB7tjRdhDB1jQM9mvia6zw553BbQwBOIAbXv3VPtCZRPG3FqpA0vA8qh5bEyIE8KoXyWuUtA/VOvEkG9V5jc9D7ir1p90AZaQAo4ve4TUESsr0FQ+TOQOE1AsRHyPyWPj2aODS4C8hs88HOgUWNaQN5O3AyI/icBA6ImAQOiJgEDoiYBA6ImAQOiJgEDoiYBA6ImAQOiJgEDoiZBCohf70KHqn69C79gig5V/YKpQPgFTyJ6ydCGjCfQCYiQsTAgMgHn/gDj6U8lgeVvlwAAAABJRU5ErkJggg==" InformativeScreenshot="b8f8672cb6e80f93d6b8de2021b2c31a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Supply Chain Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="95c253979ffd431015ec010642168493.jpg" Selector="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Supply Chain Management' /&gt;" Url="https://developer.automationanywhere.com/challenges/automationanywherelabs-supplychainmanagement.html?utm_source=challenge_page_success&amp;utm_medium=Developer%20Advocacy&amp;utm_campaign=supply_chain" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
